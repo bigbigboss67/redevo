@@ -1,0 +1,116 @@
+<section id="view-escrow" class="tab-view hidden space-y-6">
+  <div class="card-bezel">
+    <div class="card-inner p-6 space-y-6">
+      
+      <!-- Header -->
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-4 border-b border-slate-100 dark:border-white/5">
+        <div>
+          <div class="flex items-center gap-2">
+            <span class="text-xs font-mono font-bold text-amber-600 dark:text-amber-400 uppercase tracking-wider">BANK ESCROW BENCHMARK // UNICREDIT & BBI TRUST PROTOCOL</span>
+            <span class="px-2.5 py-0.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-[10px] font-mono text-emerald-600 dark:text-emerald-400 font-semibold">4-ENTITY MULTI-SIG VAULT</span>
+          </div>
+          <h2 class="text-xl font-bold text-slate-900 dark:text-white tracking-tight mt-1">
+            FIDIC Red Book Multi-Sig Escrow Milestone Governance
+          </h2>
+          <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
+            Full compliance with BiH Law on Obligations and RERA-grade buyer funds segregation.
+          </p>
+        </div>
+
+        <div class="flex items-center gap-3">
+          <div class="text-right">
+            <span class="text-[10px] font-mono text-slate-400 block uppercase">Escrow Locked Capital</span>
+            <span class="text-lg font-mono font-bold text-emerald-600 dark:text-emerald-400" id="escrow-locked-val">€28,600,000</span>
+          </div>
+          <button onclick="requestTrancheAudit()" class="px-3.5 py-1.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs font-mono transition flex items-center gap-1.5 shadow-sm">
+            <i data-lucide="shield" class="w-3.5 h-3.5"></i> Audit Signatures
+          </button>
+        </div>
+      </div>
+
+      <!-- 4-Entity Cryptographic Sign-Off Visual Gate -->
+      <div class="p-5 rounded-2xl bg-slate-50 dark:bg-white/[0.02] border border-slate-200 dark:border-white/5 space-y-4">
+        <div class="flex items-center justify-between text-xs font-mono">
+          <span class="text-slate-500 font-bold uppercase">Active Release Gate: Tranche #4 (Superstructure Pours)</span>
+          <span class="px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 font-bold">3 of 4 Keys Signed</span>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 text-xs font-mono">
+          
+          <!-- Key 1: Master Developer -->
+          <div class="p-3.5 rounded-xl bg-white dark:bg-white/5 border border-emerald-500/40 shadow-sm space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-[10px] text-slate-400">KEY 1: SPONSOR</span>
+              <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+            </div>
+            <h4 class="font-bold text-slate-900 dark:text-white text-xs">AT WORLD / ILB Dev</h4>
+            <p class="text-[10px] text-slate-500">Authorized: Tariq Al-Mansoor</p>
+            <span class="px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 text-[10px] font-bold block text-center">SIGNED // TOKEN VALID</span>
+          </div>
+
+          <!-- Key 2: Independent FIDIC Engineer -->
+          <div class="p-3.5 rounded-xl bg-white dark:bg-white/5 border border-emerald-500/40 shadow-sm space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-[10px] text-slate-400">KEY 2: ENGINEER</span>
+              <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+            </div>
+            <h4 class="font-bold text-slate-900 dark:text-white text-xs">Sinteza Chief Engineer</h4>
+            <p class="text-[10px] text-slate-500">Certified: Dino Hadzic, EurIng</p>
+            <span class="px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 text-[10px] font-bold block text-center">SIGNED // LAB TEST OK</span>
+          </div>
+
+          <!-- Key 3: Escrow Bank Trustee -->
+          <div class="p-3.5 rounded-xl bg-white dark:bg-white/5 border border-emerald-500/40 shadow-sm space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-[10px] text-slate-400">KEY 3: BANK TRUSTEE</span>
+              <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+            </div>
+            <h4 class="font-bold text-slate-900 dark:text-white text-xs">UniCredit Escrow Dept</h4>
+            <p class="text-[10px] text-slate-500">Officer: Lejla Mehmedovic</p>
+            <span class="px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 text-[10px] font-bold block text-center">SIGNED // VOUCHER HELD</span>
+          </div>
+
+          <!-- Key 4: Municipal Auditor -->
+          <div class="p-3.5 rounded-xl bg-white dark:bg-white/5 border border-amber-500 shadow-sm space-y-2">
+            <div class="flex items-center justify-between">
+              <span class="text-[10px] text-slate-400">KEY 4: REGULATOR</span>
+              <span class="w-2 h-2 rounded-full bg-amber-500 animate-ping"></span>
+            </div>
+            <h4 class="font-bold text-slate-900 dark:text-white text-xs">Breza Municipality Auditor</h4>
+            <p class="text-[10px] text-slate-500">Urban Planning Dept No. 41</p>
+            <button onclick="signMunicipal()" class="w-full py-1 rounded bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-[10px] transition">SIGN AS AUDITOR</button>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Real-World Payment Plan Ledger -->
+      <div class="p-4 rounded-2xl bg-slate-50 dark:bg-white/[0.02] border border-slate-200 dark:border-white/5 space-y-3 font-mono text-xs">
+        <h4 class="font-bold text-slate-900 dark:text-white text-xs">50/50 Off-Plan Milestone Drawdown Schedule (BiH Statutory Escrow)</h4>
+        <div class="space-y-1.5 text-[11px]">
+          <div class="p-2.5 rounded-xl bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 flex items-center justify-between">
+            <span>Tranche 1: Expression of Interest (1.00%)</span>
+            <span class="text-emerald-500 font-bold">€970,000 (100% Collected & Locked)</span>
+          </div>
+          <div class="p-2.5 rounded-xl bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 flex items-center justify-between">
+            <span>Tranche 2: Sales Purchase Agreement (4.00%)</span>
+            <span class="text-emerald-500 font-bold">€3,880,000 (100% Collected & Locked)</span>
+          </div>
+          <div class="p-2.5 rounded-xl bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 flex items-center justify-between">
+            <span>Tranche 3: Raft Foundations & Earthworks (5.00% x 4 Months)</span>
+            <span class="text-emerald-500 font-bold">€19,400,000 (Released via Engineer Cert #1-4)</span>
+          </div>
+          <div class="p-2.5 rounded-xl bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 flex items-center justify-between">
+            <span>Tranche 4: Superstructure & MEP (5.00% x 4 Months)</span>
+            <span class="text-amber-500 font-bold">€19,400,000 (Active • 3 of 4 Keys Signed)</span>
+          </div>
+          <div class="p-2.5 rounded-xl bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 flex items-center justify-between">
+            <span>Tranche 5: Municipal Handover Certificate (5.00%)</span>
+            <span class="text-slate-400 font-bold">€4,850,000 (Scheduled Q4 2027)</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

@@ -1,0 +1,110 @@
+<section id="view-contractor-sla" class="tab-view hidden space-y-6">
+  <div class="card-bezel">
+    <div class="card-inner p-6 space-y-6">
+      
+      <!-- Header -->
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-4 border-b border-slate-100 dark:border-white/5">
+        <div>
+          <div class="flex items-center gap-2">
+            <span class="text-xs font-mono font-bold text-amber-600 dark:text-amber-400 uppercase tracking-wider">PROCORE FIELD BENCHMARK // SUBCONTRACTOR SLA GOVERNOR</span>
+            <span class="px-2.5 py-0.5 rounded-full bg-purple-500/10 border border-purple-500/20 text-[10px] font-mono text-purple-600 dark:text-purple-400 font-semibold">BIOMETRICS & QA LAB</span>
+          </div>
+          <h2 class="text-xl font-bold text-slate-900 dark:text-white tracking-tight mt-1">
+            Site Turnstile Biometrics, Concrete Lab Tests & Liquidated Damages
+          </h2>
+          <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
+            Automated monitoring of 142 craftsmen, 28-day cylinder tests, and penalty clocks.
+          </p>
+        </div>
+
+        <div class="flex items-center gap-3">
+          <span class="px-3 py-1.5 rounded-xl bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20 text-xs font-mono font-bold flex items-center gap-1.5">
+            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> 142 Active On Site
+          </span>
+          <button onclick="downloadTurnstileCSV()" class="px-3.5 py-1.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs font-mono transition flex items-center gap-1.5 shadow-sm">
+            <i data-lucide="file-spreadsheet" class="w-3.5 h-3.5"></i> Export Daily Log CSV
+          </button>
+        </div>
+      </div>
+
+      <!-- Real-World Subcontractor Cards with Liquidated Damages Penalty Clocks -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 font-mono text-xs">
+        
+        <!-- Sub 1: Bosna Beton -->
+        <div class="p-4 rounded-2xl bg-slate-50 dark:bg-white/[0.02] border border-slate-200 dark:border-white/5 space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="font-bold text-slate-900 dark:text-white text-sm">Bosna Beton d.d.</span>
+            <span class="px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 text-[10px]">98.2% On-Time</span>
+          </div>
+          <p class="text-[11px] text-slate-500 font-sans">Ready-mix structural concrete pours for Villa foundations and Building 'O' Equestrian Hub.</p>
+          <div class="space-y-1 text-[11px] text-slate-500 pt-2 border-t border-slate-200 dark:border-white/5">
+            <div class="flex justify-between"><span>Active Headcount:</span> <strong class="text-slate-900 dark:text-white">48 Men</strong></div>
+            <div class="flex justify-between"><span>28-Day C30/37 Strength:</span> <strong class="text-emerald-500">38.4 MPa (PASS)</strong></div>
+            <div class="flex justify-between"><span>Liquidated Damages:</span> <span class="text-emerald-500">€0 (No Delay)</span></div>
+          </div>
+        </div>
+
+        <!-- Sub 2: Sinteza Construction JV -->
+        <div class="p-4 rounded-2xl bg-slate-50 dark:bg-white/[0.02] border border-slate-200 dark:border-white/5 space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="font-bold text-slate-900 dark:text-white text-sm">Sinteza JV</span>
+            <span class="px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 text-[10px]">99.1% On-Time</span>
+          </div>
+          <p class="text-[11px] text-slate-500 font-sans">General superstructure, rebar tying, and Heart '♥' Resort hotel civil works.</p>
+          <div class="space-y-1 text-[11px] text-slate-500 pt-2 border-t border-slate-200 dark:border-white/5">
+            <div class="flex justify-between"><span>Active Headcount:</span> <strong class="text-slate-900 dark:text-white">62 Men</strong></div>
+            <div class="flex justify-between"><span>Safety Incident Rate:</span> <strong class="text-emerald-500">0 LTIs (180 Days)</strong></div>
+            <div class="flex justify-between"><span>Liquidated Damages:</span> <span class="text-emerald-500">€0 (No Delay)</span></div>
+          </div>
+        </div>
+
+        <!-- Sub 3: Alu-Façade Austria -->
+        <div class="p-4 rounded-2xl bg-slate-50 dark:bg-white/[0.02] border border-slate-200 dark:border-white/5 space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="font-bold text-slate-900 dark:text-white text-sm">Alu-Façade Austria</span>
+            <span class="px-2 py-0.5 rounded bg-amber-500/10 text-amber-600 dark:text-amber-400 text-[10px]">Watch SLA</span>
+          </div>
+          <p class="text-[11px] text-slate-500 font-sans">Schüco triple-glazed thermal curtain walls for 120 villas and Building 'I' Clinic.</p>
+          <div class="space-y-1 text-[11px] text-slate-500 pt-2 border-t border-slate-200 dark:border-white/5">
+            <div class="flex justify-between"><span>Active Headcount:</span> <strong class="text-slate-900 dark:text-white">32 Men</strong></div>
+            <div class="flex justify-between"><span>Glass Deliveries:</span> <strong class="text-amber-500">Batch 3 in Transit</strong></div>
+            <div class="flex justify-between"><span>Daily Penalty Clause:</span> <span class="text-amber-500">€2,500/day trigger</span></div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Real-World Turnstile Log Table (Gate 1 to 7) -->
+      <div class="p-4 rounded-2xl bg-slate-50 dark:bg-white/[0.02] border border-slate-200 dark:border-white/5 space-y-3 font-mono text-xs">
+        <div class="flex items-center justify-between">
+          <h4 class="font-bold text-slate-900 dark:text-white text-xs">Real-Time Access Control Log (Turnstiles Ulaz 1 - 7)</h4>
+          <span class="text-[11px] text-slate-400">Live RFID & Biometric Stream</span>
+        </div>
+        <div class="space-y-1.5 text-[11px]">
+          <div class="p-2 rounded-xl bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+              <span>[08:14:22] Gate 2 (Main Access): 14 Craftsmen entered (Sinteza JV Crew A)</span>
+            </div>
+            <span class="text-slate-400">Badge Confirmed</span>
+          </div>
+          <div class="p-2 rounded-xl bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+              <span>[08:21:05] Gate 6 (Valley Road): Ready-Mix Truck #12 Ingress (Bosna Beton, 9m³ C30/37)</span>
+            </div>
+            <span class="text-cyan-500 font-bold">Slump Test 180mm (OK)</span>
+          </div>
+          <div class="p-2 rounded-xl bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+              <span>[08:35:50] Gate 4 (Central Hub): Safety Inspection Team checked in (Sinteza QA/QC)</span>
+            </div>
+            <span class="text-emerald-500 font-bold">PPE Compliant</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

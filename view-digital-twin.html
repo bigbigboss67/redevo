@@ -1,0 +1,87 @@
+<section id="view-digital-twin" class="tab-view hidden space-y-6">
+  <div class="card-bezel">
+    <div class="card-inner p-6 space-y-6">
+      
+      <!-- Header -->
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-4 border-b border-slate-100 dark:border-white/5">
+        <div>
+          <div class="flex items-center gap-2">
+            <span class="text-xs font-mono font-bold text-amber-600 dark:text-amber-400 uppercase tracking-wider">BIM 360 & AUTODESK CLOUD BENCHMARK</span>
+            <span class="px-2.5 py-0.5 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-[10px] font-mono text-cyan-600 dark:text-cyan-400 font-semibold">SOVEREIGN 3D POINT-CLOUD</span>
+          </div>
+          <h2 class="text-xl font-bold text-slate-900 dark:text-white tracking-tight mt-1">
+            Autonomous Drone LiDAR & BIM 4D Spatial Twin
+          </h2>
+          <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
+            Real-time volumetric deviation monitoring across the 120 villas and 5 landmark building foundations.
+          </p>
+        </div>
+
+        <div class="flex flex-wrap items-center gap-2.5">
+          <span class="px-3 py-1.5 rounded-xl bg-cyan-500/10 text-cyan-600 dark:text-cyan-400 border border-cyan-500/20 text-xs font-mono font-bold flex items-center gap-1.5">
+            <span class="w-2 h-2 rounded-full bg-cyan-500 animate-pulse"></span> LiDAR Accuracy: ±2.8 mm
+          </span>
+          <button onclick="triggerLiDARFlight()" class="px-3.5 py-1.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs font-mono transition flex items-center gap-1.5 shadow-sm">
+            <i data-lucide="plane" class="w-3.5 h-3.5"></i> Trigger Drone Flight Scan
+          </button>
+        </div>
+      </div>
+
+      <!-- Real-World PM Controls Toolbar (Benchmark vs Autodesk BIM 360) -->
+      <div class="flex flex-wrap items-center justify-between gap-3 p-3 rounded-2xl bg-slate-50 dark:bg-white/[0.02] border border-slate-200 dark:border-white/5 text-xs font-mono">
+        <div class="flex flex-wrap items-center gap-2">
+          <span class="text-slate-500 font-bold uppercase mr-1">Layer Visibility:</span>
+          <button onclick="toggleBimLayer('ifc')" id="btn-layer-ifc" class="px-2.5 py-1 rounded-lg bg-cyan-500/15 text-cyan-600 dark:text-cyan-400 border border-cyan-500/30 font-bold">IFC Superstructure</button>
+          <button onclick="toggleBimLayer('terrain')" id="btn-layer-terrain" class="px-2.5 py-1 rounded-lg bg-slate-200 dark:bg-white/10 text-slate-700 dark:text-slate-300">Terrain Mesh</button>
+          <button onclick="toggleBimLayer('mep')" id="btn-layer-mep" class="px-2.5 py-1 rounded-lg bg-slate-200 dark:bg-white/10 text-slate-700 dark:text-slate-300">MEP Utilities</button>
+          <button onclick="toggleBimLayer('clash')" id="btn-layer-clash" class="px-2.5 py-1 rounded-lg bg-rose-500/15 text-rose-600 dark:text-rose-400 border border-rose-500/30">Clash Detection (0)</button>
+        </div>
+        <div class="flex items-center gap-3 text-slate-500 text-[11px]">
+          <span>Point Density: <strong>1.4M Pts/m²</strong></span>
+          <span>WGS84 Datum: <strong>Breza East 44.02° N</strong></span>
+        </div>
+      </div>
+
+      <!-- 3D Canvas Canvas & Telemetry Overlay -->
+      <div class="relative w-full h-[460px] rounded-2xl overflow-hidden border border-slate-200 dark:border-white/10 bg-slate-950 flex items-center justify-center group">
+        <canvas id="bim-canvas" width="800" height="460" class="w-full h-full block"></canvas>
+        
+        <!-- Live HUD Overlay -->
+        <div class="absolute top-3 left-3 p-3 rounded-xl bg-black/80 backdrop-blur-md border border-white/10 text-[11px] font-mono text-white space-y-1">
+          <div class="flex items-center gap-2 text-emerald-400 font-bold">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+            <span>AUTONOMOUS LIDAR SURVEY: SYNCHRONIZED</span>
+          </div>
+          <p class="text-slate-400 text-[10px]">Earthworks Volumetric Diff: -120 m³ (Compacted)</p>
+          <p class="text-slate-400 text-[10px]">Villa Foundation Settlement: 0.8 mm (Nominal < 15 mm)</p>
+        </div>
+
+        <div class="absolute bottom-3 right-3 flex items-center gap-2">
+          <button onclick="resetBimCamera()" class="px-2.5 py-1.5 rounded-lg bg-black/75 hover:bg-black text-white text-[10px] font-mono border border-white/20 transition">Reset Camera</button>
+          <button onclick="toggleWireframe()" class="px-2.5 py-1.5 rounded-lg bg-black/75 hover:bg-black text-white text-[10px] font-mono border border-white/20 transition">Toggle Wireframe</button>
+        </div>
+      </div>
+
+      <!-- BIM 360 Inspection Metrics -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-3 text-xs font-mono">
+        <div class="p-3.5 rounded-xl bg-slate-50 dark:bg-white/[0.02] border border-slate-200 dark:border-white/5 space-y-1">
+          <span class="text-slate-400 text-[10px] block">TOTAL BIM VOLUME</span>
+          <span class="font-bold text-slate-900 dark:text-white text-sm">61,000 m³ Concrete</span>
+        </div>
+        <div class="p-3.5 rounded-xl bg-slate-50 dark:bg-white/[0.02] border border-slate-200 dark:border-white/5 space-y-1">
+          <span class="text-slate-400 text-[10px] block">CRITICAL CLASHES</span>
+          <span class="font-bold text-emerald-600 dark:text-emerald-400 text-sm">0 Hard Clashes</span>
+        </div>
+        <div class="p-3.5 rounded-xl bg-slate-50 dark:bg-white/[0.02] border border-slate-200 dark:border-white/5 space-y-1">
+          <span class="text-slate-400 text-[10px] block">SLOPE STABILITY</span>
+          <span class="font-bold text-slate-900 dark:text-white text-sm">Factor of Safety 1.82</span>
+        </div>
+        <div class="p-3.5 rounded-xl bg-slate-50 dark:bg-white/[0.02] border border-slate-200 dark:border-white/5 space-y-1">
+          <span class="text-slate-400 text-[10px] block">POINT CLOUD DATE</span>
+          <span class="font-bold text-cyan-600 dark:text-cyan-400 text-sm">Today, 08:30 CET</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>

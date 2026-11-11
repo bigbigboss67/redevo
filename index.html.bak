@@ -1,0 +1,1428 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AETHEL APEX // I LOVE BOSNIA — $1,000,000 Sovereign Enterprise PM OS</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          },
+          colors: {
+            brand: {
+              gold: '#E5A93C',
+              'gold-light': '#F7D070',
+              'gold-dim': 'rgba(229, 169, 60, 0.15)',
+              obsidian: '#07080B',
+              surface: '#0F1117',
+              'surface-card': '#151822',
+              border: 'rgba(255, 255, 255, 0.08)',
+              emerald: '#10B981',
+              rose: '#F43F5E',
+              amber: '#F59E0B',
+              cyan: '#06B6D4'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      background-color: #07080B;
+      color: #E2E8F0;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      overflow-x: hidden;
+    }
+    .double-bezel {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 1.75rem;
+      padding: 0.375rem;
+      box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.7);
+    }
+    .inner-core {
+      background: #0F1117;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      border-radius: calc(1.75rem - 0.375rem);
+      box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.12);
+    }
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #07080B;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 9999px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #E5A93C;
+    }
+    .pulsing-beacon {
+      box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+      animation: pulse-ring 2s cubic-bezier(0.45, 0, 0.2, 1) infinite;
+    }
+    @keyframes pulse-ring {
+      0% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7); }
+      70% { box-shadow: 0 0 0 10px rgba(16, 185, 129, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
+    }
+  </style>
+</head>
+<body class="min-h-[100dvh] flex flex-col antialiased selection:bg-[#E5A93C]/30 selection:text-white">
+
+  <!-- Ambient Glow -->
+  <div class="fixed top-0 left-1/2 -translate-x-1/2 w-[1100px] h-[320px] bg-gradient-to-b from-[#E5A93C]/10 via-[#06B6D4]/5 to-transparent blur-3xl pointer-events-none -z-10"></div>
+
+  <!-- Main View Container -->
+  <div class="w-full max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 py-5 space-y-6">
+
+    <!-- FLOATING TOP COMMAND BAR -->
+    <header class="double-bezel sticky top-4 z-40">
+      <div class="inner-core px-6 py-3.5 flex flex-col xl:flex-row items-center justify-between gap-4">
+        
+        <div class="flex items-center gap-4">
+          <div class="w-11 h-11 rounded-2xl bg-gradient-to-br from-[#E5A93C] to-[#996515] p-[1px] shadow-lg shadow-[#E5A93C]/10">
+            <div class="w-full h-full bg-[#07080B] rounded-[calc(1rem-1px)] flex items-center justify-center">
+              <i data-lucide="layers" class="w-5 h-5 text-[#E5A93C]"></i>
+            </div>
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="text-xs uppercase tracking-[0.25em] font-mono text-[#E5A93C] font-semibold">AETHEL APEX // 100% SOVEREIGN INTERNAL OS</span>
+              <span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-[10px] font-mono text-emerald-400">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping"></span> I LOVE BOSNIA (BREZA)
+              </span>
+            </div>
+            <h1 class="text-lg font-bold text-white tracking-tight flex items-center gap-2">
+              120 Luxury Villas Master Development <span class="text-slate-500 font-light">|</span> 124,480 m² <span class="text-xs font-mono px-2 py-0.5 rounded bg-white/5 text-slate-300">Sarajevo North</span>
+            </h1>
+          </div>
+        </div>
+
+        <!-- Master Tabs -->
+        <div class="flex items-center p-1 bg-black/50 rounded-full border border-white/5 text-xs font-medium overflow-x-auto max-w-full">
+          <button onclick="switchTab('cockpit')" id="tab-btn-cockpit" class="nav-tab px-3.5 py-1.5 rounded-full bg-white/10 text-white font-semibold transition whitespace-nowrap">
+            1. Cockpit
+          </button>
+          <button onclick="switchTab('matrix')" id="tab-btn-matrix" class="nav-tab px-3.5 py-1.5 rounded-full text-slate-400 hover:text-white transition whitespace-nowrap">
+            2. 120-Plot CAD Matrix
+          </button>
+          <button onclick="switchTab('digital-twin')" id="tab-btn-digital-twin" class="nav-tab px-3.5 py-1.5 rounded-full text-slate-400 hover:text-white transition whitespace-nowrap">
+            3. 3D BIM & Drone LiDAR
+          </button>
+          <button onclick="switchTab('escrow')" id="tab-btn-escrow" class="nav-tab px-3.5 py-1.5 rounded-full text-slate-400 hover:text-white transition whitespace-nowrap">
+            4. FIDIC Escrow Multi-Sig
+          </button>
+          <button onclick="switchTab('contractor-sla')" id="tab-btn-contractor-sla" class="nav-tab px-3.5 py-1.5 rounded-full text-slate-400 hover:text-white transition whitespace-nowrap">
+            5. Biometrics & Penalties
+          </button>
+          <button onclick="switchTab('fidic-claims')" id="tab-btn-fidic-claims" class="nav-tab px-3.5 py-1.5 rounded-full text-slate-400 hover:text-white transition whitespace-nowrap">
+            6. FIDIC Clause 20 Claims
+          </button>
+          <button onclick="switchTab('bizdev-engine')" id="tab-btn-bizdev-engine" class="nav-tab px-3.5 py-1.5 rounded-full text-[#E5A93C] bg-[#E5A93C]/10 border border-[#E5A93C]/30 font-semibold hover:text-white transition whitespace-nowrap">
+            ✦ Ingestion & BizDev OS
+          </button>
+          <button onclick="switchTab('buyer-portal')" id="tab-btn-buyer-portal" class="nav-tab px-3.5 py-1.5 rounded-full text-slate-400 hover:text-white transition whitespace-nowrap">
+            8. Buyer 360° Portal
+          </button>
+        </div>
+
+        <div class="flex items-center gap-3">
+          <div class="flex items-center bg-black/60 border border-white/10 rounded-full p-1 text-[11px] font-mono">
+            <button onclick="setCurrency('EUR')" id="curr-EUR" class="curr-btn px-2.5 py-1 rounded-full bg-[#E5A93C] text-black font-bold">EUR €</button>
+            <button onclick="setCurrency('BAM')" id="curr-BAM" class="curr-btn px-2.5 py-1 rounded-full text-slate-400 hover:text-white">BAM KM</button>
+            <button onclick="setCurrency('USD')" id="curr-USD" class="curr-btn px-2.5 py-1 rounded-full text-slate-400 hover:text-white">USD $</button>
+            <button onclick="setCurrency('AED')" id="curr-AED" class="curr-btn px-2.5 py-1 rounded-full text-slate-400 hover:text-white">AED</button>
+          </div>
+
+          <button onclick="triggerSimulationModal()" class="group relative inline-flex items-center gap-2 pl-3.5 pr-1.5 py-1.5 rounded-full bg-white/5 border border-white/15 hover:border-[#E5A93C]/50 transition text-xs font-semibold text-white">
+            <span>Risk Simulator</span>
+            <div class="w-6 h-6 rounded-full bg-[#E5A93C] flex items-center justify-center text-black group-hover:rotate-45 transition-transform">
+              <i data-lucide="zap" class="w-3 h-3"></i>
+            </div>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- PILLAR 1: COCKPIT -->
+    <main id="view-cockpit" class="tab-view space-y-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div class="double-bezel">
+          <div class="inner-core p-5 flex flex-col justify-between h-full space-y-3">
+            <span class="text-[11px] font-mono uppercase tracking-wider text-slate-400">Total Project GDV</span>
+            <div>
+              <div class="text-2xl font-bold font-mono tracking-tight text-white" id="kpi-gdv">€54,200,000</div>
+              <p class="text-xs text-slate-400 mt-1"><span class="text-emerald-400 font-mono">↑ 50/50 Schedule</span> Escrow drawdown 68.4%</p>
+            </div>
+            <div class="w-full bg-white/5 rounded-full h-1.5 overflow-hidden">
+              <div class="bg-gradient-to-r from-[#E5A93C] to-emerald-400 h-full rounded-full" style="width: 68.4%"></div>
+            </div>
+            <div class="flex justify-between text-[10px] font-mono text-slate-400">
+              <span>Paid: <strong class="text-white" id="kpi-paid">€37.07M</strong></span>
+              <span>In Escrow: <strong class="text-white" id="kpi-escrow">€17.13M</strong></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="double-bezel">
+          <div class="inner-core p-5 flex flex-col justify-between h-full space-y-3">
+            <span class="text-[11px] font-mono uppercase tracking-wider text-slate-400">Schedule Float Buffer</span>
+            <div>
+              <div class="text-2xl font-bold font-mono tracking-tight text-white">64.2% <span class="text-xs font-normal text-slate-400">(Target: 68.0%)</span></div>
+              <p class="text-xs text-slate-400 mt-1">Superstructure core ahead of target</p>
+            </div>
+            <div class="w-full bg-white/5 rounded-full h-1.5 overflow-hidden">
+              <div class="bg-emerald-400 h-full" style="width: 64.2%"></div>
+            </div>
+            <div class="flex justify-between text-[10px] font-mono text-slate-400">
+              <span>Critical Path: <strong class="text-emerald-400">OPTIMAL (+11.4d)</strong></span>
+              <span>Handover: Q2 2027</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="double-bezel">
+          <div class="inner-core p-5 flex flex-col justify-between h-full space-y-3">
+            <span class="text-[11px] font-mono uppercase tracking-wider text-slate-400">Turnstile Biometrics (Ulaz 1-7)</span>
+            <div>
+              <div class="text-2xl font-bold font-mono tracking-tight text-white">142 <span class="text-xs font-normal text-slate-400 font-sans">Active Craftsmen</span></div>
+              <p class="text-xs text-slate-400 mt-1">48 Rebar, 34 Concrete, 28 MEP, 12 QA</p>
+            </div>
+            <div class="flex items-center gap-2 text-[11px] font-mono text-slate-400">
+              <span class="w-2 h-2 rounded-full bg-emerald-400 pulsing-beacon"></span>
+              <span>412 Days Zero Lost-Time Incidents</span>
+            </div>
+            <div class="flex justify-between text-[10px] font-mono text-slate-400">
+              <span>Weather: <strong class="text-white">12°C Clear, Breza Valley</strong></span>
+              <span>Wind: 8 km/h</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="double-bezel">
+          <div class="inner-core p-5 flex flex-col justify-between h-full space-y-3">
+            <span class="text-[11px] font-mono uppercase tracking-wider text-slate-400">FIDIC QA Pass Rate</span>
+            <div>
+              <div class="text-2xl font-bold font-mono tracking-tight text-white">€0 <span class="text-xs font-normal text-slate-400 font-sans">Active Penalties</span></div>
+              <p class="text-xs text-slate-400 mt-1">Avg contractor snag fix: 18.4 hrs (SLA: 24h)</p>
+            </div>
+            <div class="w-full bg-white/5 rounded-full h-1.5 overflow-hidden">
+              <div class="bg-emerald-400 h-full" style="width: 98.2%"></div>
+            </div>
+            <div class="flex justify-between text-[10px] font-mono text-slate-400">
+              <span>Sinteza CAD Audit: <strong class="text-white">Active</strong></span>
+              <span>120 Plots Checked</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+        <div class="lg:col-span-8 double-bezel">
+          <div class="inner-core p-6 space-y-6">
+            <div class="flex justify-between items-center pb-4 border-b border-white/5">
+              <div>
+                <span class="text-[10px] font-mono uppercase tracking-[0.2em] text-[#E5A93C]">Master Plan Zoning & Progress</span>
+                <h2 class="text-lg font-bold text-white tracking-tight">120 Luxury 4-Bedroom Villas (300 m² BUA Each)</h2>
+              </div>
+              <button onclick="switchTab('matrix')" class="px-3.5 py-1.5 rounded-full bg-white/5 hover:bg-white/10 text-xs font-mono text-[#E5A93C] border border-[#E5A93C]/30 flex items-center gap-1.5 transition">
+                <i data-lucide="grid" class="w-3.5 h-3.5"></i> Inspect 120 Plots
+              </button>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <div class="relative group rounded-2xl overflow-hidden border border-white/10 bg-black aspect-[4/3]">
+                <img src="assets/images/villa_facade_exterior.jpg" alt="Villa Exterior" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex flex-col justify-end p-3">
+                  <span class="text-[10px] font-mono text-[#E5A93C] font-semibold">CLUSTER ALPHA (K01 - K30)</span>
+                  <p class="text-xs font-bold text-white">Signature Contemporary Villas</p>
+                  <span class="text-[10px] text-emerald-400 font-mono mt-0.5">85% Complete (Fitout)</span>
+                </div>
+              </div>
+
+              <div class="relative group rounded-2xl overflow-hidden border border-white/10 bg-black aspect-[4/3]">
+                <img src="assets/images/villa_facade_dusk.jpg" alt="Villa Dusk" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex flex-col justify-end p-3">
+                  <span class="text-[10px] font-mono text-[#E5A93C] font-semibold">CLUSTER BETA (K31 - K75)</span>
+                  <p class="text-xs font-bold text-white">Hillside Panoramic Villas</p>
+                  <span class="text-[10px] text-cyan-400 font-mono mt-0.5">62% Superstructure Core</span>
+                </div>
+              </div>
+
+              <div class="relative group rounded-2xl overflow-hidden border border-white/10 bg-black aspect-[4/3]">
+                <img src="assets/images/villa_rear_garden_pool.jpg" alt="Rear Garden Pool" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex flex-col justify-end p-3">
+                  <span class="text-[10px] font-mono text-[#E5A93C] font-semibold">CLUSTER GAMMA (K76 - K120)</span>
+                  <p class="text-xs font-bold text-white">Valley Garden Estates</p>
+                  <span class="text-[10px] text-amber-400 font-mono mt-0.5">48% Ground Foundations</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-4 double-bezel">
+          <div class="inner-core p-6 space-y-4 flex flex-col justify-between h-full">
+            <div>
+              <div class="flex items-center justify-between pb-3 border-b border-white/5">
+                <h3 class="text-sm font-bold text-white flex items-center gap-2">
+                  <i data-lucide="radio" class="w-4 h-4 text-[#E5A93C]"></i> Live Telemetry Feed
+                </h3>
+                <span class="text-[10px] font-mono text-slate-500">Live Socket</span>
+              </div>
+              <div class="mt-4 space-y-3 text-xs">
+                <div class="p-3 rounded-xl bg-white/[0.02] border border-white/5">
+                  <div class="flex items-center justify-between text-[10px] font-mono">
+                    <span class="text-[#E5A93C] font-semibold">PLOT K-018 // POUR #4</span>
+                    <span class="text-slate-500">07:18 CET</span>
+                  </div>
+                  <p class="text-slate-200 mt-1 font-medium">Batch C30/37 (42m³) Foundation Slab Certified</p>
+                  <p class="text-[10px] text-slate-400 mt-0.5">Slump: 180mm • 28-day cylinder strength: 38.4 MPa</p>
+                </div>
+                <div class="p-3 rounded-xl bg-white/[0.02] border border-white/5">
+                  <div class="flex items-center justify-between text-[10px] font-mono">
+                    <span class="text-emerald-400 font-semibold">SUPPLY CHAIN // BORDER CLEARANCE</span>
+                    <span class="text-slate-500">06:40 CET</span>
+                  </div>
+                  <p class="text-slate-200 mt-1 font-medium">Schüco AWS 75.SI+ Glazing Convoy Arrived</p>
+                  <p class="text-[10px] text-slate-400 mt-0.5">32 crates cleared at Gradina border • Staged in Depot 2</p>
+                </div>
+              </div>
+            </div>
+            <button onclick="inspectPlotDetails('K-018')" class="w-full py-2 px-3 rounded-xl bg-white/5 hover:bg-white/10 text-xs font-mono text-slate-300 text-center transition flex items-center justify-center gap-2">
+              <i data-lucide="eye" class="w-3.5 h-3.5 text-[#E5A93C]"></i> Deep Inspect Plot K-018
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- PILLAR 2: 120-PLOT CAD MATRIX -->
+    <section id="view-matrix" class="tab-view hidden space-y-6">
+      <div class="double-bezel">
+        <div class="inner-core p-6 space-y-5">
+          <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-4 border-b border-white/5">
+            <div>
+              <span class="text-xs font-mono text-[#E5A93C] uppercase tracking-wider">SINTEZA CAD 120-PLOT SCHEME</span>
+              <h2 class="text-xl font-bold text-white tracking-tight mt-1">Interactive 120-Plot Micro-Telemetry Matrix (K1 - K120)</h2>
+            </div>
+            <div class="flex flex-wrap items-center gap-2 text-xs font-mono">
+              <button onclick="filterPlots('all')" class="filter-chip px-3 py-1.5 rounded-full bg-white/10 text-white font-semibold">All (120)</button>
+              <button onclick="filterPlots('fitout')" class="filter-chip px-3 py-1.5 rounded-full bg-white/5 text-emerald-400 hover:bg-emerald-500/10">Fitout (20)</button>
+              <button onclick="filterPlots('mep')" class="filter-chip px-3 py-1.5 rounded-full bg-white/5 text-cyan-400 hover:bg-cyan-500/10">MEP (25)</button>
+              <button onclick="filterPlots('structure')" class="filter-chip px-3 py-1.5 rounded-full bg-white/5 text-blue-400 hover:bg-blue-500/10">Structure (31)</button>
+              <button onclick="filterPlots('foundation')" class="filter-chip px-3 py-1.5 rounded-full bg-white/5 text-amber-400 hover:bg-amber-500/10">Foundation (22)</button>
+              <button onclick="filterPlots('earthworks')" class="filter-chip px-3 py-1.5 rounded-full bg-white/5 text-rose-400 hover:bg-rose-500/10">Earthworks (14)</button>
+            </div>
+          </div>
+          <div id="plots-container" class="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-10 lg:grid-cols-12 gap-2.5 pt-2 max-h-[580px] overflow-y-auto pr-1"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PILLAR 3: 3D BIM & DRONE LIDAR -->
+    <section id="view-digital-twin" class="tab-view hidden space-y-6">
+      <div class="double-bezel">
+        <div class="inner-core p-6 space-y-6">
+          <div class="flex justify-between items-center pb-4 border-b border-white/5">
+            <div>
+              <span class="text-xs font-mono text-[#E5A93C] uppercase tracking-wider">NATIVE BROWSER IFC & POINT-CLOUD ENGINE</span>
+              <h2 class="text-xl font-bold text-white tracking-tight mt-1">Autonomous Drone LiDAR Volumetric Diff & CAD Overlay</h2>
+            </div>
+            <span class="px-3 py-1 rounded-full bg-cyan-500/10 text-cyan-400 border border-cyan-500/20 text-xs font-mono">LiDAR Accuracy: ±2.8 mm</span>
+          </div>
+          <div class="relative w-full h-[460px] rounded-2xl overflow-hidden border border-white/10 bg-[#050608] flex items-center justify-center">
+            <canvas id="bim-canvas" width="800" height="460" class="w-full h-full"></canvas>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PILLAR 4: FIDIC ESCROW MULTI-SIG -->
+    <section id="view-escrow" class="tab-view hidden space-y-6">
+      <div class="double-bezel">
+        <div class="inner-core p-6 space-y-6">
+          <div class="flex justify-between items-center pb-4 border-b border-white/5">
+            <div>
+              <span class="text-xs font-mono text-[#E5A93C] uppercase tracking-wider">FIDIC RED BOOK ESCROW PROTOCOL</span>
+              <h2 class="text-xl font-bold text-white tracking-tight mt-1">Multi-Party Cryptographic Milestone Release</h2>
+            </div>
+            <span class="text-slate-400 text-xs font-mono">Locked: <strong class="text-emerald-400 font-bold" id="escrow-locked-val">€17,130,000</strong></span>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+            <div class="p-4 rounded-2xl bg-white/[0.02] border border-white/5">
+              <span class="text-slate-400 font-mono text-xs">Developer</span>
+              <div class="text-sm font-bold text-white mt-1">ILB Development Ltd</div>
+              <span class="text-emerald-400 font-mono text-[10px]">SIGNED</span>
+            </div>
+            <div class="p-4 rounded-2xl bg-white/[0.02] border border-white/5">
+              <span class="text-slate-400 font-mono text-xs">Independent Engineer</span>
+              <div class="text-sm font-bold text-white mt-1">Sinteza CAD Lab</div>
+              <span class="text-emerald-400 font-mono text-[10px]">CERTIFIED</span>
+            </div>
+            <div class="p-4 rounded-2xl bg-white/[0.02] border border-white/5">
+              <span class="text-slate-400 font-mono text-xs">Bank Escrow Trustee</span>
+              <div class="text-sm font-bold text-white mt-1">UniCredit Bank Custody</div>
+              <span class="text-emerald-400 font-mono text-[10px]">CONFIRMED</span>
+            </div>
+            <div class="p-4 rounded-2xl bg-white/[0.02] border border-amber-500/20">
+              <span class="text-amber-400 font-mono text-xs font-semibold">Municipal Auditor</span>
+              <div class="text-sm font-bold text-white mt-1">Breza Urban Planning</div>
+              <button onclick="signMunicipal()" class="w-full mt-2 py-1 px-2 rounded-lg bg-[#E5A93C] text-black font-bold text-[10px] font-mono">Sign Tranche Release</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PILLAR 5: CONTRACTOR SLA & BIOMETRICS -->
+    <section id="view-contractor-sla" class="tab-view hidden space-y-6">
+      <div class="double-bezel">
+        <div class="inner-core p-6 space-y-6">
+          <div class="flex justify-between items-center pb-4 border-b border-white/5">
+            <div>
+              <span class="text-xs font-mono text-[#E5A93C] uppercase tracking-wider">SUBCONTRACTOR SLA & LIQUIDATED DAMAGES GOVERNOR</span>
+              <h2 class="text-xl font-bold text-white tracking-tight mt-1">Live Turnstile Attendance & Concrete Compressive Testing</h2>
+            </div>
+            <span class="px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 text-xs font-mono">100% SLA Compliance</span>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+            <div class="p-4 rounded-2xl bg-white/[0.02] border border-white/5">
+              <div class="text-white font-bold text-xs">Bosna Beton & Rebar Corp</div>
+              <p class="text-[11px] font-mono text-slate-400 mt-1">Headcount: 48 / 45 • Cube Strength: 41.2 MPa • Float: +6d</p>
+              <span class="text-emerald-400 font-mono text-[10px]">0 Penalties (€2,500/d SLA)</span>
+            </div>
+            <div class="p-4 rounded-2xl bg-white/[0.02] border border-white/5">
+              <div class="text-white font-bold text-xs">Alu-Façade Austria (Schüco)</div>
+              <p class="text-[11px] font-mono text-slate-400 mt-1">Glaziers: 18 • Acoustic Dampening: 44.8 dB • Depot: Staged</p>
+              <span class="text-emerald-400 font-mono text-[10px]">0 Penalties (€3,200/d SLA)</span>
+            </div>
+            <div class="p-4 rounded-2xl bg-white/[0.02] border border-white/5">
+              <div class="text-white font-bold text-xs">Euro-Asfalt Infrastructure</div>
+              <p class="text-[11px] font-mono text-slate-400 mt-1">Road Masons: 22 • Proctor Density: 99.1% • Gates 1-5 Open</p>
+              <span class="text-emerald-400 font-mono text-[10px]">0 Penalties (€1,800/d SLA)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PILLAR 6: FIDIC CLAUSE 20 CLAIMS -->
+    <section id="view-fidic-claims" class="tab-view hidden space-y-6">
+      <div class="double-bezel">
+        <div class="inner-core p-6 space-y-6">
+          <div class="flex justify-between items-center pb-4 border-b border-white/5">
+            <div>
+              <span class="text-xs font-mono text-[#E5A93C] uppercase tracking-wider">FIDIC 2017 SUB-CLAUSE 20.1 / 20.2 LEGAL ENGINE</span>
+              <h2 class="text-xl font-bold text-white tracking-tight mt-1">Contractual Claims, EOT Early Warnings & ISO 19650 CDE</h2>
+            </div>
+            <button onclick="generateFidicNotice()" class="px-3.5 py-1.5 rounded-full bg-[#E5A93C] text-black font-bold text-xs flex items-center gap-1.5">
+              <i data-lucide="file-text" class="w-3.5 h-3.5"></i> Draft Sub-Clause 20.2 Notice
+            </button>
+          </div>
+          <div class="p-4 rounded-2xl bg-white/[0.02] border border-white/5 space-y-2 text-xs font-mono">
+            <div class="text-[#E5A93C] font-bold">ISO 19650 CDE STAGES: WIP (42) → SHARED (18) → PUBLISHED (120) → ARCHIVE (WORM)</div>
+            <p class="text-slate-400">All contractor claims logged with strict 28-day statutory bar countdown to prevent dispute litigation.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MASTER PILLAR 7: INGESTION & BIZDEV OS -->
+    <section id="view-bizdev-engine" class="tab-view hidden space-y-6">
+      <div class="double-bezel">
+        <div class="inner-core p-6 space-y-6">
+          
+          <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4 pb-4 border-b border-white/5">
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="text-xs font-mono text-[#E5A93C] uppercase tracking-wider font-bold">MULTIMODAL AI PROJECT INGESTION & SYNTHESIS</span>
+                <span class="px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 text-[10px] font-mono">SOVEREIGN INTERNAL STACK</span>
+              </div>
+              <h2 class="text-xl font-bold text-white tracking-tight mt-1">Internal Document Ingestion, Generative Timeframe, Feasibility & Collections Engine</h2>
+            </div>
+            
+            <div class="flex flex-wrap items-center gap-2">
+              <button onclick="openModal('ve-modal')" class="px-3.5 py-1.5 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 text-xs font-mono hover:bg-emerald-500/20 transition flex items-center gap-1.5">
+                <i data-lucide="trending-down" class="w-3.5 h-3.5"></i> Value Engineering (-€1.42M)
+              </button>
+              <button onclick="openModal('banking-modal')" class="px-3.5 py-1.5 rounded-full bg-cyan-500/10 text-cyan-400 border border-cyan-500/20 text-xs font-mono hover:bg-cyan-500/20 transition flex items-center gap-1.5">
+                <i data-lucide="link" class="w-3.5 h-3.5"></i> Bank Webhook Sync
+              </button>
+              <button onclick="openModal('sim4d-modal')" class="px-3.5 py-1.5 rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/20 text-xs font-mono hover:bg-blue-500/20 transition flex items-center gap-1.5">
+                <i data-lucide="play-circle" class="w-3.5 h-3.5"></i> 4D Build Sim (24 Mo)
+              </button>
+              <button onclick="openModal('fidic-modal')" class="px-3.5 py-1.5 rounded-full bg-amber-500/10 text-amber-400 border border-amber-500/20 text-xs font-mono hover:bg-amber-500/20 transition flex items-center gap-1.5">
+                <i data-lucide="scroll" class="w-3.5 h-3.5"></i> Auto-Draft FIDIC Contract
+              </button>
+              <button onclick="triggerAiSynthesis()" id="btn-synthesize" class="px-4 py-2 rounded-full bg-gradient-to-r from-[#E5A93C] to-[#F7D070] text-black font-bold text-xs hover:shadow-lg hover:shadow-[#E5A93C]/20 transition flex items-center gap-2">
+                <i data-lucide="sparkles" class="w-4 h-4 text-black"></i> Re-Synthesize Project
+              </button>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-5">
+            <div class="lg:col-span-5 p-5 rounded-2xl bg-white/[0.02] border-2 border-dashed border-white/10 hover:border-[#E5A93C]/50 transition flex flex-col justify-center items-center text-center space-y-3 cursor-pointer group" onclick="simulateFileUpload()">
+              <div class="w-12 h-12 rounded-2xl bg-white/5 group-hover:bg-[#E5A93C]/20 text-slate-400 group-hover:text-[#E5A93C] flex items-center justify-center transition">
+                <i data-lucide="upload-cloud" class="w-6 h-6"></i>
+              </div>
+              <div>
+                <h4 class="text-xs font-bold text-white group-hover:text-[#E5A93C] transition">Drop Project Dossiers Here or Browse</h4>
+                <p class="text-[11px] text-slate-400 mt-1 max-w-xs">Upload Architecture (IFC/CAD), Feasibility Studies (PDF), Financial Models (XLSX), Geotechnical Surveys.</p>
+              </div>
+              <span class="text-[10px] font-mono px-2.5 py-1 rounded-full bg-white/5 text-slate-400">PDF, IFC, DWG, XLSX, DOCX up to 500MB</span>
+            </div>
+
+            <div class="lg:col-span-7 space-y-2.5">
+              <div class="text-[10px] font-mono uppercase tracking-wider text-slate-400 flex justify-between">
+                <span>Ingested Project Dossiers (Parsed & Vectorized)</span>
+                <span class="text-emerald-400">4 of 4 Verified</span>
+              </div>
+              <div class="p-3 rounded-xl bg-white/[0.02] border border-white/5 flex items-center justify-between text-xs font-mono">
+                <div class="flex items-center gap-3">
+                  <div class="w-8 h-8 rounded-lg bg-rose-500/10 text-rose-400 flex items-center justify-center"><i data-lucide="file-text" class="w-4 h-4"></i></div>
+                  <div>
+                    <div class="text-white font-bold">ILB_Master_Feasibility_Study_Breza_2026.pdf</div>
+                    <span class="text-[10px] text-slate-400">148 Pages • DCF Underwriting, Demographic Absorption & Yield</span>
+                  </div>
+                </div>
+                <span class="px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 text-[10px]">PARSED</span>
+              </div>
+              <div class="p-3 rounded-xl bg-white/[0.02] border border-white/5 flex items-center justify-between text-xs font-mono">
+                <div class="flex items-center gap-3">
+                  <div class="w-8 h-8 rounded-lg bg-cyan-500/10 text-cyan-400 flex items-center justify-center"><i data-lucide="box" class="w-4 h-4"></i></div>
+                  <div>
+                    <div class="text-white font-bold">Sinteza_CAD_120_Villas_Architecture_BIM.ifc</div>
+                    <span class="text-[10px] text-slate-400">340 MB • 120 Plots Structural Geometry, Bill of Quantities</span>
+                  </div>
+                </div>
+                <span class="px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 text-[10px]">PARSED</span>
+              </div>
+              <div class="p-3 rounded-xl bg-white/[0.02] border border-white/5 flex items-center justify-between text-xs font-mono">
+                <div class="flex items-center gap-3">
+                  <div class="w-8 h-8 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center"><i data-lucide="table" class="w-4 h-4"></i></div>
+                  <div>
+                    <div class="text-white font-bold">ILB_50_50_OffPlan_Financial_ProForma_v4.xlsx</div>
+                    <span class="text-[10px] text-slate-400">38 Sheets • 120-Villa Cash Collections, S-Curves, IRR 26.4%</span>
+                  </div>
+                </div>
+                <span class="px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 text-[10px]">PARSED</span>
+              </div>
+              <div class="p-3 rounded-xl bg-white/[0.02] border border-white/5 flex items-center justify-between text-xs font-mono">
+                <div class="flex items-center gap-3">
+                  <div class="w-8 h-8 rounded-lg bg-amber-500/10 text-amber-400 flex items-center justify-center"><i data-lucide="mountain" class="w-4 h-4"></i></div>
+                  <div>
+                    <div class="text-white font-bold">Breza_Valley_Geotechnical_Soil_Borehole_Report.pdf</div>
+                    <span class="text-[10px] text-slate-400">62 Pages • 250 kPa Bedrock Bearing, Hillside Drainage</span>
+                  </div>
+                </div>
+                <span class="px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 text-[10px]">PARSED</span>
+              </div>
+            </div>
+          </div>
+
+          <div id="synthesis-banner" class="p-4 rounded-xl bg-[#E5A93C]/10 border border-[#E5A93C]/30 text-xs font-mono text-white hidden">
+            <div class="flex items-center justify-between">
+              <span class="font-bold flex items-center gap-2 text-[#E5A93C]">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-[#E5A93C]"></i>
+                AI SYNTHESIS ACTIVE: Generating WBS Timeline, Financial Model, Risk Register & Collections Ledger...
+              </span>
+              <span class="text-emerald-400 font-bold">100% COMPLETE</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- 6 Sovereign Sub-Views -->
+      <div class="double-bezel">
+        <div class="inner-core p-6 space-y-6">
+          <div class="flex flex-wrap items-center justify-between gap-3 pb-4 border-b border-white/5">
+            <div class="flex flex-wrap items-center p-1 bg-black/40 rounded-full border border-white/5 text-xs font-mono">
+              <button onclick="switchBizSubTab('timeframe')" id="biz-sub-timeframe" class="biz-tab px-3.5 py-1.5 rounded-full bg-white/10 text-white font-semibold transition">
+                1. Generative WBS Timeframe
+              </button>
+              <button onclick="switchBizSubTab('business-model')" id="biz-sub-business-model" class="biz-tab px-3.5 py-1.5 rounded-full text-slate-400 hover:text-white transition">
+                2. Business Model & Underwriting
+              </button>
+              <button onclick="switchBizSubTab('risk-mgmt')" id="biz-sub-risk-mgmt" class="biz-tab px-3.5 py-1.5 rounded-full text-slate-400 hover:text-white transition">
+                3. Risk Management Matrix
+              </button>
+              <button onclick="switchBizSubTab('collections')" id="biz-sub-collections" class="biz-tab px-3.5 py-1.5 rounded-full text-slate-400 hover:text-white transition">
+                4. Collections & Cash Flow S-Curve
+              </button>
+              <button onclick="switchBizSubTab('internal-erp')" id="biz-sub-internal-erp" class="biz-tab px-3.5 py-1.5 rounded-full text-slate-400 hover:text-white transition">
+                5. Sovereign Internal ERP Ledger
+              </button>
+              <button onclick="switchBizSubTab('snagging-canvas')" id="biz-sub-snagging-canvas" class="biz-tab px-3.5 py-1.5 rounded-full text-slate-400 hover:text-white transition">
+                6. Native CAD Plan Snagging Tool
+              </button>
+            </div>
+            <span class="text-[11px] font-mono text-slate-400">100% Native Internal Stack</span>
+          </div>
+
+          <!-- Sub 1: Timeframe -->
+          <div id="biz-view-timeframe" class="biz-view space-y-4">
+            <div class="flex justify-between items-center text-xs">
+              <div>
+                <h3 class="text-sm font-bold text-white">Generative WBS & Critical Path Schedule</h3>
+                <p class="text-slate-400 text-[11px]">Auto-sequenced across 120 plots factoring Breza frost constraints & labor availability</p>
+              </div>
+              <span class="px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 font-mono text-xs border border-emerald-500/20">Optimal Scenario: +11.4 Days Buffer</span>
+            </div>
+            <div class="space-y-2 font-mono text-xs">
+              <div class="p-3 rounded-xl bg-white/[0.02] border border-white/5 flex flex-col md:flex-row md:items-center justify-between gap-3">
+                <div class="w-full md:w-1/3"><span class="text-[#E5A93C] font-bold">PHASE 1: Master Planning & Permitting</span></div>
+                <div class="text-[11px] text-slate-300">Jan 2026 - May 2026</div>
+                <div class="w-32 bg-white/10 h-1.5 rounded-full overflow-hidden"><div class="bg-emerald-400 h-full" style="width: 100%"></div></div>
+                <span class="px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 text-[10px]">100% COMPLETE</span>
+              </div>
+              <div class="p-3 rounded-xl bg-white/[0.02] border border-white/5 flex flex-col md:flex-row md:items-center justify-between gap-3">
+                <div class="w-full md:w-1/3"><span class="text-[#E5A93C] font-bold">PHASE 2: Geotechnical Excavation & Infrastructure</span></div>
+                <div class="text-[11px] text-slate-300">May 2026 - Sep 2026</div>
+                <div class="w-32 bg-white/10 h-1.5 rounded-full overflow-hidden"><div class="bg-emerald-400 h-full" style="width: 100%"></div></div>
+                <span class="px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 text-[10px]">100% COMPLETE</span>
+              </div>
+              <div class="p-3 rounded-xl bg-white/[0.02] border border-white/5 flex flex-col md:flex-row md:items-center justify-between gap-3">
+                <div class="w-full md:w-1/3"><span class="text-[#E5A93C] font-bold">PHASE 3: Foundation Slabs & Retaining Terraces</span></div>
+                <div class="text-[11px] text-slate-300">Aug 2026 - Dec 2026</div>
+                <div class="w-32 bg-white/10 h-1.5 rounded-full overflow-hidden"><div class="bg-cyan-400 h-full" style="width: 88%"></div></div>
+                <span class="px-2 py-0.5 rounded bg-cyan-500/10 text-cyan-400 text-[10px]">88% IN PROGRESS</span>
+              </div>
+              <div class="p-3 rounded-xl bg-white/[0.02] border border-white/5 flex flex-col md:flex-row md:items-center justify-between gap-3">
+                <div class="w-full md:w-1/3"><span class="text-[#E5A93C] font-bold">PHASE 4: Superstructure Concrete & Upper Slabs</span></div>
+                <div class="text-[11px] text-slate-300">Oct 2026 - Apr 2027</div>
+                <div class="w-32 bg-white/10 h-1.5 rounded-full overflow-hidden"><div class="bg-blue-400 h-full" style="width: 54%"></div></div>
+                <span class="px-2 py-0.5 rounded bg-blue-500/10 text-blue-400 text-[10px]">54% ACTIVE</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sub 2: Business Model Underwriting -->
+          <div id="biz-view-business-model" class="biz-view hidden space-y-4">
+            <div class="flex justify-between items-center text-xs">
+              <h3 class="text-sm font-bold text-white">Institutional Feasibility & DCF Underwriting Pro-Forma</h3>
+              <span class="text-slate-400 font-mono text-[11px]">Standard: UNIDO / RICS</span>
+            </div>
+            <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 gap-3 font-mono">
+              <div class="p-3 rounded-xl bg-white/[0.02] border border-white/5">
+                <span class="text-[10px] text-slate-400">GROSS GDV</span>
+                <div class="text-base font-bold text-white mt-1">€54,200,000</div>
+              </div>
+              <div class="p-3 rounded-xl bg-white/[0.02] border border-white/5">
+                <span class="text-[10px] text-slate-400">TOTAL COST (TDC)</span>
+                <div class="text-base font-bold text-white mt-1">€33,480,000</div>
+              </div>
+              <div class="p-3 rounded-xl bg-white/[0.02] border border-white/5">
+                <span class="text-[10px] text-slate-400">DEVELOPER PROFIT</span>
+                <div class="text-base font-bold text-emerald-400 mt-1">€20,720,000</div>
+              </div>
+              <div class="p-3 rounded-xl bg-white/[0.02] border border-white/5">
+                <span class="text-[10px] text-slate-400">PROJECT IRR</span>
+                <div class="text-base font-bold text-cyan-400 mt-1">26.4%</div>
+              </div>
+              <div class="p-3 rounded-xl bg-white/[0.02] border border-white/5">
+                <span class="text-[10px] text-slate-400">PROJECT NPV</span>
+                <div class="text-base font-bold text-white mt-1">€14,850,000</div>
+              </div>
+              <div class="p-3 rounded-xl bg-white/[0.02] border border-white/5">
+                <span class="text-[10px] text-slate-400">EQUITY MULTIPLE</span>
+                <div class="text-base font-bold text-emerald-400 mt-1">2.14x</div>
+              </div>
+              <div class="p-3 rounded-xl bg-white/[0.02] border border-white/5">
+                <span class="text-[10px] text-slate-400">PAYBACK</span>
+                <div class="text-base font-bold text-white mt-1">22 Months</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sub 3: Risk Management -->
+          <div id="biz-view-risk-mgmt" class="biz-view hidden space-y-4">
+            <div class="flex justify-between items-center text-xs">
+              <h3 class="text-sm font-bold text-white">Monte Carlo Quantitative Project Risk Register</h3>
+              <span class="px-2.5 py-1 rounded bg-cyan-500/10 text-cyan-400 font-mono text-[11px]">Contingency Reserve: €1,850,000 Allocated</span>
+            </div>
+            <div class="overflow-x-auto">
+              <table class="w-full text-left text-xs text-slate-300 font-mono border-collapse">
+                <thead>
+                  <tr class="border-b border-white/10 text-[10px] uppercase text-slate-400 bg-white/[0.02]">
+                    <th class="py-2.5 px-3">Risk ID</th>
+                    <th class="py-2.5 px-3">Scenario</th>
+                    <th class="py-2.5 px-3">Probability</th>
+                    <th class="py-2.5 px-3">Exposure</th>
+                    <th class="py-2.5 px-3">Mitigation</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-white/5">
+                  <tr class="hover:bg-white/[0.02]">
+                    <td class="py-2.5 px-3 text-[#E5A93C] font-bold">RSK-01</td>
+                    <td class="py-2.5 px-3 font-sans text-white">Geotechnical Fissures in Terrace 3</td>
+                    <td class="py-2.5 px-3 text-amber-400">Low (14%)</td>
+                    <td class="py-2.5 px-3">€85,000</td>
+                    <td class="py-2.5 px-3 text-emerald-400">Tie-backs installed</td>
+                  </tr>
+                  <tr class="hover:bg-white/[0.02]">
+                    <td class="py-2.5 px-3 text-[#E5A93C] font-bold">RSK-02</td>
+                    <td class="py-2.5 px-3 font-sans text-white">Breza Alpine Freeze (-10°C)</td>
+                    <td class="py-2.5 px-3 text-cyan-400">Med (48%)</td>
+                    <td class="py-2.5 px-3">€42,000</td>
+                    <td class="py-2.5 px-3 text-emerald-400">Heated formwork & float</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Sub 4: Collections -->
+          <div id="biz-view-collections" class="biz-view hidden space-y-4">
+            <div class="flex justify-between items-center text-xs">
+              <h3 class="text-sm font-bold text-white">120-Villa Off-Plan Collections & Escrow Cash-In S-Curve</h3>
+              <button onclick="sendAutomatedTrancheInvoices()" class="px-3.5 py-1.5 rounded-full bg-[#E5A93C] text-black font-bold text-xs flex items-center gap-1.5">
+                <i data-lucide="send" class="w-3.5 h-3.5"></i> Send 120 Tranche Notices
+              </button>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-4 gap-4 font-mono">
+              <div class="p-4 rounded-xl bg-white/[0.02] border border-white/5 space-y-1">
+                <span class="text-[10px] text-slate-400">CONTRACTED REVENUE</span>
+                <div class="text-lg font-bold text-white">€54,200,000</div>
+              </div>
+              <div class="p-4 rounded-xl bg-white/[0.02] border border-white/5 space-y-1">
+                <span class="text-[10px] text-slate-400">ACTUAL CASH COLLECTED</span>
+                <div class="text-lg font-bold text-emerald-400">€37,070,000</div>
+                <span class="text-[10px] text-emerald-400">68.4% Recovered</span>
+              </div>
+              <div class="p-4 rounded-xl bg-white/[0.02] border border-white/5 space-y-1">
+                <span class="text-[10px] text-slate-400">IN ESCROW CUSTODY</span>
+                <div class="text-lg font-bold text-cyan-400">€17,130,000</div>
+              </div>
+              <div class="p-4 rounded-xl bg-white/[0.02] border border-rose-500/20 space-y-1">
+                <span class="text-[10px] text-rose-400 font-semibold">OVERDUE / DELINQUENT</span>
+                <div class="text-lg font-bold text-rose-400">€42,500</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sub 5: Sovereign Internal ERP -->
+          <div id="biz-view-internal-erp" class="biz-view hidden space-y-4">
+            <div class="flex justify-between items-center text-xs">
+              <div>
+                <h3 class="text-sm font-bold text-white">Sovereign Internal ERP & Double-Entry General Ledger</h3>
+                <p class="text-slate-400 text-[11px]">100% Internal Self-Hosted Accounting • Zero Third-Party SaaS Reliance</p>
+              </div>
+              <span class="px-2.5 py-1 rounded bg-emerald-500/10 text-emerald-400 font-mono text-[11px]">Trial Balance: PERFECTLY BALANCED (€79,445,000)</span>
+            </div>
+            <div class="overflow-x-auto">
+              <table class="w-full text-left text-xs text-slate-300 font-mono border-collapse">
+                <thead>
+                  <tr class="border-b border-white/10 text-[10px] uppercase text-slate-400 bg-white/[0.02]">
+                    <th class="py-2.5 px-3">Code</th>
+                    <th class="py-2.5 px-3">Account Description</th>
+                    <th class="py-2.5 px-3">Type</th>
+                    <th class="py-2.5 px-3">Debit (€)</th>
+                    <th class="py-2.5 px-3">Credit (€)</th>
+                    <th class="py-2.5 px-3">Internal Status</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-white/5">
+                  <tr class="hover:bg-white/[0.02]">
+                    <td class="py-2.5 px-3 text-[#E5A93C] font-bold">1010</td>
+                    <td class="py-2.5 px-3 font-sans text-white">UniCredit Escrow Trust Account</td>
+                    <td class="py-2.5 px-3 text-cyan-400">Asset</td>
+                    <td class="py-2.5 px-3 text-emerald-400">€17,130,000</td>
+                    <td class="py-2.5 px-3 text-slate-600">—</td>
+                    <td class="py-2.5 px-3 text-emerald-400">Reconciled</td>
+                  </tr>
+                  <tr class="hover:bg-white/[0.02]">
+                    <td class="py-2.5 px-3 text-[#E5A93C] font-bold">1020</td>
+                    <td class="py-2.5 px-3 font-sans text-white">Operating Project Cash</td>
+                    <td class="py-2.5 px-3 text-cyan-400">Asset</td>
+                    <td class="py-2.5 px-3 text-emerald-400">€4,820,000</td>
+                    <td class="py-2.5 px-3 text-slate-600">—</td>
+                    <td class="py-2.5 px-3 text-emerald-400">Reconciled</td>
+                  </tr>
+                  <tr class="hover:bg-white/[0.02]">
+                    <td class="py-2.5 px-3 text-[#E5A93C] font-bold">1200</td>
+                    <td class="py-2.5 px-3 font-sans text-white">Accounts Receivable (120 Buyers)</td>
+                    <td class="py-2.5 px-3 text-cyan-400">Asset</td>
+                    <td class="py-2.5 px-3 text-emerald-400">€17,130,000</td>
+                    <td class="py-2.5 px-3 text-slate-600">—</td>
+                    <td class="py-2.5 px-3 text-cyan-400">Active Tranches</td>
+                  </tr>
+                  <tr class="hover:bg-white/[0.02]">
+                    <td class="py-2.5 px-3 text-[#E5A93C] font-bold">1400</td>
+                    <td class="py-2.5 px-3 font-sans text-white">WIP Construction Asset (Capitalized)</td>
+                    <td class="py-2.5 px-3 text-cyan-400">Asset</td>
+                    <td class="py-2.5 px-3 text-emerald-400">€28,450,000</td>
+                    <td class="py-2.5 px-3 text-slate-600">—</td>
+                    <td class="py-2.5 px-3 text-emerald-400">BOQ Matched</td>
+                  </tr>
+                  <tr class="hover:bg-white/[0.02]">
+                    <td class="py-2.5 px-3 text-[#E5A93C] font-bold">2010</td>
+                    <td class="py-2.5 px-3 font-sans text-white">Retainage Payable (10% FIDIC)</td>
+                    <td class="py-2.5 px-3 text-amber-400">Liability</td>
+                    <td class="py-2.5 px-3 text-slate-600">—</td>
+                    <td class="py-2.5 px-3 text-amber-400">€2,845,000</td>
+                    <td class="py-2.5 px-3 text-emerald-400">Held in Custody</td>
+                  </tr>
+                  <tr class="hover:bg-white/[0.02]">
+                    <td class="py-2.5 px-3 text-[#E5A93C] font-bold">3010</td>
+                    <td class="py-2.5 px-3 font-sans text-white">Developer Paid-In Equity</td>
+                    <td class="py-2.5 px-3 text-purple-400">Equity</td>
+                    <td class="py-2.5 px-3 text-slate-600">—</td>
+                    <td class="py-2.5 px-3 text-purple-400">€12,000,000</td>
+                    <td class="py-2.5 px-3 text-emerald-400">Locked Baseline</td>
+                  </tr>
+                  <tr class="hover:bg-white/[0.02]">
+                    <td class="py-2.5 px-3 text-[#E5A93C] font-bold">4010</td>
+                    <td class="py-2.5 px-3 font-sans text-white">Recognized Villa Contract Revenue</td>
+                    <td class="py-2.5 px-3 text-emerald-400">Revenue</td>
+                    <td class="py-2.5 px-3 text-slate-600">—</td>
+                    <td class="py-2.5 px-3 text-emerald-400">€54,200,000</td>
+                    <td class="py-2.5 px-3 text-emerald-400">120 Units Sold</td>
+                  </tr>
+                  <tr class="hover:bg-white/[0.02]">
+                    <td class="py-2.5 px-3 text-[#E5A93C] font-bold">5010</td>
+                    <td class="py-2.5 px-3 font-sans text-white">Cost of Goods Sold (Certified Draws)</td>
+                    <td class="py-2.5 px-3 text-rose-400">Expense</td>
+                    <td class="py-2.5 px-3 text-rose-400">€11,915,000</td>
+                    <td class="py-2.5 px-3 text-slate-600">—</td>
+                    <td class="py-2.5 px-3 text-emerald-400">FIDIC Certified</td>
+                  </tr>
+                  <tr class="bg-white/5 font-bold text-white">
+                    <td colspan="3" class="py-2.5 px-3 uppercase text-[10px] text-slate-400">TOTAL BALANCED TRIAL BALANCE</td>
+                    <td class="py-2.5 px-3 text-emerald-400">€79,445,000</td>
+                    <td class="py-2.5 px-3 text-emerald-400">€79,445,000</td>
+                    <td class="py-2.5 px-3 text-emerald-400">100% BALANCED</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Sub 6: Native Snagging Tool -->
+          <div id="biz-view-snagging-canvas" class="biz-view hidden space-y-4">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs">
+              <div>
+                <h3 class="text-sm font-bold text-white">Native CAD Architectural Plan Snagging Pin Tool</h3>
+                <p class="text-slate-400 text-[11px]">Click anywhere on the 300m² Villa Layout to drop defect punch pins with 24h SLA timers</p>
+              </div>
+              <span class="px-2.5 py-1 rounded bg-[#E5A93C]/10 text-[#E5A93C] font-mono text-[11px]">Click Plan to Drop Pin</span>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-5">
+              <div class="lg:col-span-8 relative rounded-2xl overflow-hidden border border-white/10 bg-black cursor-crosshair group" onclick="dropSnagPin(event)">
+                <img id="snag-floorplan-img" src="assets/images/villa_floorplan_300m2.jpg" alt="Villa Architectural Floorplan" class="w-full h-auto object-contain select-none">
+                <div id="snag-pins-layer" class="absolute inset-0 pointer-events-none">
+                  <div class="absolute top-[38%] left-[45%] -translate-x-1/2 -translate-y-1/2 pointer-events-auto cursor-pointer" onclick="event.stopPropagation(); inspectPin('PIN-01')">
+                    <span class="w-5 h-5 rounded-full bg-rose-500 text-white font-mono text-[10px] font-bold flex items-center justify-center shadow-lg border border-white animate-pulse">1</span>
+                  </div>
+                  <div class="absolute top-[62%] left-[72%] -translate-x-1/2 -translate-y-1/2 pointer-events-auto cursor-pointer" onclick="event.stopPropagation(); inspectPin('PIN-02')">
+                    <span class="w-5 h-5 rounded-full bg-amber-500 text-black font-mono text-[10px] font-bold flex items-center justify-center shadow-lg border border-white">2</span>
+                  </div>
+                </div>
+                <div class="absolute bottom-2 left-2 px-2.5 py-1 rounded bg-black/85 text-[10px] font-mono text-slate-300">
+                  Villa Signature Floorplan (300 m² BUA) • Ground & Upper Suite
+                </div>
+              </div>
+
+              <div class="lg:col-span-4 space-y-3 font-mono text-xs">
+                <div class="p-4 rounded-xl bg-white/[0.02] border border-white/5 space-y-2">
+                  <div class="flex justify-between items-center">
+                    <span class="text-[#E5A93C] font-bold" id="snag-pin-badge">PIN-01 (ACTIVE)</span>
+                    <span class="px-2 py-0.5 rounded bg-rose-500/10 text-rose-400 text-[10px]">CRITICAL SLA</span>
+                  </div>
+                  <h4 class="font-bold text-white font-sans text-sm" id="snag-pin-title">Schüco Glazing Seal Gasket Gap</h4>
+                  <div class="text-[11px] text-slate-400 space-y-1">
+                    <div>Location: Master Bedroom Terrace Pavilion</div>
+                    <div>Assigned: Alu-Façade Austria</div>
+                    <div>SLA Timer: <strong class="text-rose-400">14h 22m Remaining</strong></div>
+                    <div>Penalty Trigger: €2,500 / day deduction</div>
+                  </div>
+                  <button onclick="resolveSnagPin('PIN-01')" class="w-full mt-2 py-1.5 rounded-lg bg-emerald-500/20 text-emerald-400 hover:bg-emerald-500/30 border border-emerald-500/30 text-[10px] font-bold transition">
+                    ✓ Sign-Off & Resolve Defect Pin
+                  </button>
+                </div>
+
+                <div class="p-3 bg-white/[0.02] rounded-xl border border-white/5 text-[10px] text-slate-400 space-y-1">
+                  <div class="text-white font-bold">100% Native Internal Defect Governance:</div>
+                  <div>• Coordinate pinned directly to plan</div>
+                  <div>• Subcontractor penalty timers tick live</div>
+                  <div>• Linked to individual villa escrow drawdown gate</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PILLAR 8: BUYER 360° PORTAL -->
+    <section id="view-buyer-portal" class="tab-view hidden space-y-6">
+      <div class="double-bezel">
+        <div class="inner-core p-6 space-y-6">
+          <div class="flex justify-between items-center pb-4 border-b border-white/5">
+            <div>
+              <span class="text-xs font-mono text-[#E5A93C] uppercase tracking-wider">INVESTOR & PURCHASER TRANSPARENCY SUITE</span>
+              <h2 class="text-xl font-bold text-white tracking-tight mt-1">Buyer Experience: Villa K-018 (Client: Tariq Al-Mansoor)</h2>
+            </div>
+            <span class="px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 text-xs font-mono">Verified VIP Owner</span>
+          </div>
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+            <div class="lg:col-span-7 space-y-4">
+              <div class="relative rounded-2xl overflow-hidden aspect-video border border-white/10 bg-black">
+                <img src="assets/images/villa_facade_exterior.jpg" alt="Villa Live Feed" class="w-full h-full object-cover">
+                <div class="absolute top-3 left-3 px-2.5 py-1 rounded bg-black/80 text-rose-400 text-[10px] font-mono flex items-center gap-1.5 border border-white/10">
+                  <span class="w-2 h-2 rounded-full bg-rose-500 animate-ping"></span> LIVE 4K CAM #4 (PLOT K-018)
+                </div>
+              </div>
+            </div>
+            <div class="lg:col-span-5 space-y-4">
+              <div class="p-5 rounded-2xl bg-white/[0.02] border border-white/5 space-y-3 font-mono text-xs">
+                <div class="flex justify-between text-slate-400"><span>Purchase Price:</span><strong class="text-white">€454,500</strong></div>
+                <div class="flex justify-between text-slate-400"><span>Milestone Paid:</span><strong class="text-emerald-400">45% (€204,525)</strong></div>
+                <div class="pt-3 border-t border-white/10 space-y-2">
+                  <button onclick="downloadOfficialInspectionCert()" class="w-full py-2.5 rounded-xl bg-white/10 hover:bg-white/15 text-xs font-mono text-white transition flex items-center justify-center gap-2">
+                    <i data-lucide="download" class="w-4 h-4 text-[#E5A93C]"></i> Download Sinteza Inspection Certificate PDF
+                  </button>
+                  <button onclick="scheduleSiteVisit()" class="w-full py-2.5 rounded-xl bg-[#E5A93C] text-black font-bold text-xs hover:bg-[#F7D070] transition flex items-center justify-center gap-2">
+                    <i data-lucide="calendar" class="w-4 h-4"></i> Book VIP Site Tour
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- MODAL: DEEP PLOT DRAWER -->
+  <div id="plot-drawer" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-md hidden flex justify-end">
+    <div class="w-full max-w-xl h-full bg-[#0F1117] border-l border-white/10 p-6 overflow-y-auto space-y-6 shadow-2xl">
+      <div class="flex items-center justify-between pb-4 border-b border-white/10">
+        <div>
+          <span class="px-2.5 py-0.5 rounded-full bg-[#E5A93C]/10 text-[#E5A93C] text-[10px] font-mono font-bold" id="drawer-plot-badge">PLOT K-018</span>
+          <h2 class="text-xl font-bold text-white tracking-tight mt-1" id="drawer-plot-title">Villa K-018 // 4-Bedroom Contemporary</h2>
+        </div>
+        <button onclick="closePlotDrawer()" class="w-8 h-8 rounded-full bg-white/5 text-slate-400 hover:text-white flex items-center justify-center"><i data-lucide="x" class="w-4 h-4"></i></button>
+      </div>
+      <div class="relative rounded-2xl overflow-hidden aspect-[16/9] border border-white/10">
+        <img id="drawer-plot-img" src="assets/images/villa_facade_exterior.jpg" alt="Villa Plot Render" class="w-full h-full object-cover">
+      </div>
+      <div class="grid grid-cols-2 gap-3 text-xs">
+        <div class="p-3 rounded-xl bg-white/[0.02] border border-white/5">
+          <span class="text-slate-400 font-mono text-[10px]">CURRENT PHASE</span>
+          <p class="font-bold text-white mt-0.5" id="drawer-plot-stage">Structural Core Pouring</p>
+        </div>
+        <div class="p-3 rounded-xl bg-white/[0.02] border border-white/5">
+          <span class="text-slate-400 font-mono text-[10px]">CONTRACT VALUE</span>
+          <p class="font-bold text-[#E5A93C] font-mono mt-0.5" id="drawer-plot-price">€454,500</p>
+        </div>
+      </div>
+      <div class="pt-4 border-t border-white/10">
+        <button onclick="approveMilestone()" class="w-full py-2.5 rounded-xl bg-[#E5A93C] text-black font-bold text-xs flex items-center justify-center gap-2">
+          <i data-lucide="check-circle" class="w-4 h-4"></i> Certify Next FIDIC Milestone Drawdown
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: RISK SIMULATION -->
+  <div id="sim-modal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-md hidden flex items-center justify-center p-4">
+    <div class="w-full max-w-lg bg-[#0F1117] border border-white/15 rounded-3xl p-6 space-y-5 shadow-2xl">
+      <div class="flex items-center justify-between pb-3 border-b border-white/10">
+        <h3 class="text-sm font-bold text-white">Monte Carlo Risk Engine</h3>
+        <button onclick="closeModal('sim-modal')" class="text-slate-400 hover:text-white"><i data-lucide="x" class="w-5 h-5"></i></button>
+      </div>
+      <div class="space-y-2 font-mono text-xs">
+        <button onclick="runScenario('frost')" class="w-full p-3 rounded-xl bg-white/[0.03] hover:bg-white/[0.07] border border-white/10 text-left transition flex items-center justify-between">
+          <div><div class="text-white font-bold">Scenario A: Winter Frost (-8°C)</div><span class="text-[10px] text-slate-400">Pours paused for 6 days</span></div>
+          <span class="text-emerald-400 text-xs">+5.4d float absorbed (SAFE)</span>
+        </button>
+      </div>
+      <div id="sim-result" class="p-3 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-mono hidden"></div>
+      <div class="pt-2 flex justify-end">
+        <button onclick="closeModal('sim-modal')" class="px-4 py-2 rounded-xl bg-white/10 text-xs font-mono text-white">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: VALUE ENGINEERING -->
+  <div id="ve-modal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-md hidden flex items-center justify-center p-4">
+    <div class="w-full max-w-xl bg-[#0F1117] border border-emerald-500/30 rounded-3xl p-6 space-y-5 shadow-2xl">
+      <div class="flex items-center justify-between pb-3 border-b border-white/10">
+        <div class="flex items-center gap-2">
+          <div class="w-8 h-8 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center"><i data-lucide="trending-down" class="w-4 h-4"></i></div>
+          <div>
+            <h3 class="text-sm font-bold text-white">AI Value Engineering Audit Engine</h3>
+            <span class="text-[10px] font-mono text-emerald-400">Net Identified Savings: €1,420,000 on €28.45M BOQ</span>
+          </div>
+        </div>
+        <button onclick="closeModal('ve-modal')" class="text-slate-400 hover:text-white"><i data-lucide="x" class="w-5 h-5"></i></button>
+      </div>
+      <div class="space-y-2.5 text-xs font-mono">
+        <div class="p-3 rounded-xl bg-white/[0.02] border border-white/5 flex justify-between items-center">
+          <div><div class="text-white font-bold">1. Concrete C30/37 Slag Replacement (20%)</div><span class="text-[10px] text-slate-400">Kakanj blast furnace slag additive</span></div>
+          <span class="text-emerald-400 font-bold">Save €310,000</span>
+        </div>
+        <div class="p-3 rounded-xl bg-white/[0.02] border border-white/5 flex justify-between items-center">
+          <div><div class="text-white font-bold">2. Bihać Limestone Direct Quarry Concession</div><span class="text-[10px] text-slate-400">Eliminating secondary intermediary</span></div>
+          <span class="text-emerald-400 font-bold">Save €480,000</span>
+        </div>
+        <div class="p-3 rounded-xl bg-white/[0.02] border border-white/5 flex justify-between items-center">
+          <div><div class="text-white font-bold">3. Austrian Schüco Currency Forward Lock</div><span class="text-[10px] text-slate-400">Locked forward rate €1.00 = 1.95583 BAM</span></div>
+          <span class="text-emerald-400 font-bold">Save €260,000</span>
+        </div>
+        <div class="p-3 rounded-xl bg-white/[0.02] border border-white/5 flex justify-between items-center">
+          <div><div class="text-white font-bold">4. Retaining Terrace Soil-Nail Optimization</div><span class="text-[10px] text-slate-400">Eliminates 40 deep bored piles</span></div>
+          <span class="text-emerald-400 font-bold">Save €370,000</span>
+        </div>
+      </div>
+      <div class="pt-3 border-t border-white/10 flex justify-end">
+        <button onclick="applyValueEngineeringSavings()" class="px-4 py-2 rounded-xl bg-emerald-500 text-black font-bold text-xs hover:bg-emerald-400 transition">Apply €1.42M Savings to Baseline</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: BANKING WEBHOOK -->
+  <div id="banking-modal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-md hidden flex items-center justify-center p-4">
+    <div class="w-full max-w-lg bg-[#0F1117] border border-cyan-500/30 rounded-3xl p-6 space-y-5 shadow-2xl">
+      <div class="flex items-center justify-between pb-3 border-b border-white/10">
+        <div class="flex items-center gap-2">
+          <div class="w-8 h-8 rounded-full bg-cyan-500/20 text-cyan-400 flex items-center justify-center"><i data-lucide="link" class="w-4 h-4"></i></div>
+          <div>
+            <h3 class="text-sm font-bold text-white">Open Banking & Escrow Webhook Sync</h3>
+            <span class="text-[10px] font-mono text-cyan-400">UniCredit d.d. Mostar & Bosna Bank Int.</span>
+          </div>
+        </div>
+        <button onclick="closeModal('banking-modal')" class="text-slate-400 hover:text-white"><i data-lucide="x" class="w-5 h-5"></i></button>
+      </div>
+      <div class="space-y-3 text-xs font-mono">
+        <div class="p-3 rounded-xl bg-cyan-500/10 border border-cyan-500/20 text-cyan-300">● Webhook Listener: `api.ilovebosnia.world/v1/escrow/webhooks`</div>
+        <div class="space-y-2">
+          <div class="p-2.5 rounded-lg bg-white/[0.02] border border-white/5 flex justify-between"><span>Escrow Balance:</span><strong class="text-white">€17,130,000.00</strong></div>
+          <div class="p-2.5 rounded-lg bg-white/[0.02] border border-white/5 flex justify-between"><span>Last Tranche:</span><strong class="text-emerald-400">+€181,800 (Plot K-018)</strong></div>
+          <div class="p-2.5 rounded-lg bg-white/[0.02] border border-white/5 flex justify-between"><span>Reconciliation Rate:</span><strong class="text-cyan-400">100% (120 of 120 Plots)</strong></div>
+        </div>
+      </div>
+      <div class="pt-3 border-t border-white/10 flex justify-end">
+        <button onclick="closeModal('banking-modal')" class="px-4 py-2 rounded-xl bg-white/10 text-white text-xs font-mono">Close Connection Monitor</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: 4D SIMULATION -->
+  <div id="sim4d-modal" class="fixed inset-0 z-50 bg-black/85 backdrop-blur-md hidden flex items-center justify-center p-4">
+    <div class="w-full max-w-3xl bg-[#0F1117] border border-blue-500/30 rounded-3xl p-6 space-y-5 shadow-2xl">
+      <div class="flex items-center justify-between pb-3 border-b border-white/10">
+        <div class="flex items-center gap-2">
+          <div class="w-8 h-8 rounded-full bg-blue-500/20 text-blue-400 flex items-center justify-center"><i data-lucide="play-circle" class="w-4 h-4"></i></div>
+          <div>
+            <h3 class="text-sm font-bold text-white">4D Generative Construction Simulation Engine</h3>
+            <span class="text-[10px] font-mono text-blue-400">120 Villas • 24-Month Build Progression Timeline</span>
+          </div>
+        </div>
+        <button onclick="closeModal('sim4d-modal')" class="text-slate-400 hover:text-white"><i data-lucide="x" class="w-5 h-5"></i></button>
+      </div>
+      <div class="relative w-full aspect-video rounded-2xl overflow-hidden border border-white/10 bg-black">
+        <img id="sim4d-image" src="assets/images/masterplan_3d_numbered.jpg" alt="4D Simulation Frame" class="w-full h-full object-cover">
+        <div class="absolute bottom-3 left-3 px-3 py-1.5 rounded-lg bg-black/80 border border-white/10 font-mono text-xs text-white">
+          <span class="text-[#E5A93C] font-bold" id="sim4d-month-text">Month 14 of 24 (Progressive Build)</span>
+        </div>
+      </div>
+      <div class="space-y-2">
+        <div class="flex justify-between text-xs font-mono text-slate-300">
+          <span>Playhead: <strong class="text-white" id="sim4d-slider-val">Month 14</strong></span>
+          <span class="text-emerald-400">64.2% Physical Completion</span>
+        </div>
+        <input type="range" min="1" max="24" value="14" oninput="update4dSim(this.value)" class="w-full accent-[#E5A93C] cursor-pointer">
+      </div>
+      <div class="pt-3 border-t border-white/10 flex justify-end">
+        <button onclick="closeModal('sim4d-modal')" class="px-4 py-2 rounded-xl bg-white/10 text-white hover:bg-white/15 text-xs font-mono">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: FIDIC CONTRACT -->
+  <div id="fidic-modal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-md hidden flex items-center justify-center p-4">
+    <div class="w-full max-w-xl bg-[#0F1117] border border-amber-500/30 rounded-3xl p-6 space-y-5 shadow-2xl">
+      <div class="flex items-center justify-between pb-3 border-b border-white/10">
+        <div class="flex items-center gap-2">
+          <div class="w-8 h-8 rounded-full bg-amber-500/20 text-amber-400 flex items-center justify-center"><i data-lucide="scroll" class="w-4 h-4"></i></div>
+          <div>
+            <h3 class="text-sm font-bold text-white">FIDIC EPC Turnkey Legal Contract Generator</h3>
+            <span class="text-[10px] font-mono text-amber-400">FIDIC Silver/Red Book 2017 Standard</span>
+          </div>
+        </div>
+        <button onclick="closeModal('fidic-modal')" class="text-slate-400 hover:text-white"><i data-lucide="x" class="w-5 h-5"></i></button>
+      </div>
+      <div class="space-y-3 text-xs font-mono">
+        <div class="p-3 bg-white/[0.02] rounded-xl border border-white/5 space-y-1">
+          <div class="text-white font-bold">Contractor: Bosna Beton & Sinteza Construction JV</div>
+          <div class="text-slate-400">Project: I LOVE BOSNIA (120 Villas, Breza Parcel 124,479.50 m²)</div>
+          <div class="text-slate-400">Contract Sum: €28,450,000 (Firm Fixed Price with Indexation Cap)</div>
+        </div>
+      </div>
+      <div class="pt-3 border-t border-white/10 flex justify-end">
+        <button onclick="downloadContractPDF()" class="px-4 py-2 rounded-xl bg-[#E5A93C] text-black font-bold text-xs hover:bg-[#F7D070] transition flex items-center gap-2">
+          <i data-lucide="download" class="w-4 h-4"></i> Export Executable Contract PDF
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- JAVASCRIPT SYSTEM ENGINE -->
+  <script>
+    const RATES = { EUR: 1.0, BAM: 1.95583, USD: 1.08, AED: 3.96 };
+    const CURRENCY_SYMBOLS = { EUR: '€', BAM: 'KM ', USD: '$', AED: 'AED ' };
+    let currentCurrency = 'EUR';
+
+    const STAGES = [
+      { name: 'fitout', label: 'Luxury Fitout', color: 'bg-emerald-500', count: 20 },
+      { name: 'mep', label: 'MEP & Glazing', color: 'bg-cyan-500', count: 25 },
+      { name: 'structure', label: 'Superstructure', color: 'bg-blue-500', count: 31 },
+      { name: 'foundation', label: 'Foundation Pour', color: 'bg-amber-500', count: 22 },
+      { name: 'earthworks', label: 'Geotech Excavation', color: 'bg-rose-500', count: 14 },
+      { name: 'prep', label: 'Permit & Prep', color: 'bg-slate-600', count: 8 }
+    ];
+
+    const SUBCONTRACTORS = [
+      'Bosna Beton d.d.',
+      'Sinteza Construction JV',
+      'Euro-Asfalt d.o.o.',
+      'Alu-Façade Austria',
+      'Breza Municipal Works'
+    ];
+
+    const PLOTS = [];
+    let plotIdx = 1;
+    STAGES.forEach(stage => {
+      for (let i = 0; i < stage.count; i++) {
+        const idNum = String(plotIdx).padStart(3, '0');
+        const id = `K-${idNum}`;
+        const sub = SUBCONTRACTORS[plotIdx % SUBCONTRACTORS.length];
+        const basePrice = 450000 + (plotIdx * 250);
+        const milestonePct = stage.name === 'fitout' ? 85 :
+                             stage.name === 'mep' ? 65 :
+                             stage.name === 'structure' ? 45 :
+                             stage.name === 'foundation' ? 25 :
+                             stage.name === 'earthworks' ? 10 : 5;
+
+        PLOTS.push({
+          id,
+          number: plotIdx,
+          stage: stage.name,
+          stageLabel: stage.label,
+          colorClass: stage.color,
+          subcontractor: sub,
+          priceEUR: basePrice,
+          milestonePct: milestonePct,
+          landM2: 750 + (plotIdx * 3),
+          buaM2: 300
+        });
+        plotIdx++;
+      }
+    });
+
+    function renderPlots(plotsToRender) {
+      const container = document.getElementById('plots-container');
+      if (!container) return;
+      container.innerHTML = '';
+
+      plotsToRender.forEach(p => {
+        const card = document.createElement('div');
+        card.className = `p-2.5 rounded-xl bg-white/[0.02] border border-white/5 hover:border-[#E5A93C]/50 hover:bg-white/[0.05] transition cursor-pointer flex flex-col justify-between group`;
+        card.onclick = () => inspectPlotDetails(p.id);
+
+        card.innerHTML = `
+          <div class="flex items-center justify-between">
+            <span class="text-[11px] font-mono font-bold text-white group-hover:text-[#E5A93C] transition">${p.id}</span>
+            <span class="w-2 h-2 rounded-full ${p.colorClass}"></span>
+          </div>
+          <div class="mt-2 text-[10px] text-slate-400 truncate">${p.stageLabel}</div>
+          <div class="mt-1 flex items-center justify-between text-[9px] font-mono text-slate-500">
+            <span>${p.milestonePct}%</span>
+            <span>300m²</span>
+          </div>
+        `;
+        container.appendChild(card);
+      });
+    }
+
+    function filterPlots(stage) {
+      document.querySelectorAll('.filter-chip').forEach(btn => {
+        btn.classList.remove('bg-white/10', 'font-semibold');
+        btn.classList.add('bg-white/5');
+      });
+      event.target.classList.add('bg-white/10', 'font-semibold');
+
+      if (stage === 'all') {
+        renderPlots(PLOTS);
+      } else {
+        renderPlots(PLOTS.filter(p => p.stage === stage));
+      }
+    }
+
+    function switchTab(viewId) {
+      document.querySelectorAll('.tab-view').forEach(v => v.classList.add('hidden'));
+      document.querySelectorAll('.nav-tab').forEach(b => {
+        b.classList.remove('bg-white/10', 'text-white', 'font-semibold', 'shadow-sm');
+        b.classList.add('text-slate-400');
+      });
+
+      const target = document.getElementById(`view-${viewId}`) || document.getElementById(viewId);
+      if (target) target.classList.remove('hidden');
+
+      const btn = document.getElementById(`tab-btn-${viewId}`);
+      if (btn) {
+        btn.classList.add('bg-white/10', 'text-white', 'font-semibold', 'shadow-sm');
+        btn.classList.remove('text-slate-400');
+      }
+
+      if (viewId === 'matrix') {
+        renderPlots(PLOTS);
+      } else if (viewId === 'digital-twin') {
+        initBimCanvas();
+      }
+    }
+
+    function inspectPlotDetails(plotId) {
+      const plot = PLOTS.find(p => p.id === plotId) || PLOTS[17];
+      document.getElementById('drawer-plot-badge').innerText = `PLOT ${plot.id}`;
+      document.getElementById('drawer-plot-title').innerText = `Villa ${plot.id} // 4-Bedroom Contemporary (300 m² BUA)`;
+      document.getElementById('drawer-plot-stage').innerText = plot.stageLabel;
+      
+      const symbol = CURRENCY_SYMBOLS[currentCurrency];
+      const rate = RATES[currentCurrency];
+      const priceFormatted = Math.round(plot.priceEUR * rate).toLocaleString();
+      const milestoneFormatted = Math.round((plot.priceEUR * (plot.milestonePct / 100)) * rate).toLocaleString();
+
+      document.getElementById('drawer-plot-price').innerText = `${symbol}${priceFormatted}`;
+      document.getElementById('drawer-plot-milestone').innerText = `${plot.milestonePct}% (${symbol}${milestoneFormatted})`;
+
+      document.getElementById('plot-drawer').classList.remove('hidden');
+    }
+
+    function closePlotDrawer() {
+      document.getElementById('plot-drawer').classList.add('hidden');
+    }
+
+    function openModal(id) {
+      document.getElementById(id).classList.remove('hidden');
+    }
+
+    function closeModal(id) {
+      document.getElementById(id).classList.add('hidden');
+    }
+
+    function triggerAiSynthesis() {
+      const banner = document.getElementById('synthesis-banner');
+      if (banner) {
+        banner.classList.remove('hidden');
+        setTimeout(() => {
+          alert("AI Document Synthesis Complete!\n\n1. Ingested 148p Feasibility Study + 340MB IFC Architecture.\n2. Generated 7-Phase WBS Critical Path (11.4d Float).\n3. Underwrote DCF Model: €54.2M GDV, 26.4% IRR, €14.85M NPV.\n4. Calibrated 5 Monte Carlo Project Risks.\n5. Structured €54.2M Off-Plan Collections & Escrow Ledger.");
+        }, 800);
+      }
+    }
+
+    function simulateFileUpload() {
+      alert("Multimodal File Ingestion Dialog:\nSelect project files (AutoCAD .dwg, Revit/IFC .ifc, Feasibility PDF, Pro-Forma Excel)...\n\nFile validated. Ready for AI project synthesis.");
+    }
+
+    function switchBizSubTab(tabId) {
+      document.querySelectorAll('.biz-view').forEach(v => v.classList.add('hidden'));
+      document.querySelectorAll('.biz-tab').forEach(b => {
+        b.classList.remove('bg-white/10', 'text-white', 'font-semibold');
+        b.classList.add('text-slate-400');
+      });
+
+      const target = document.getElementById(`biz-view-${tabId}`);
+      if (target) target.classList.remove('hidden');
+
+      const btn = document.getElementById(`biz-sub-${tabId}`);
+      if (btn) {
+        btn.classList.add('bg-white/10', 'text-white', 'font-semibold');
+        btn.classList.remove('text-slate-400');
+      }
+    }
+
+    function sendAutomatedTrancheInvoices() {
+      alert("Off-Plan Collections Engine:\nDispatched 120 automated milestone collection notices with certified escrow payment vouchers to UniCredit/BBI Trust.");
+    }
+
+    function applyValueEngineeringSavings() {
+      alert("Value Engineering Savings Applied!\nBaseline construction budget reduced by €1,420,000. Project margin increased to 40.8%.");
+      closeModal('ve-modal');
+    }
+
+    function update4dSim(month) {
+      document.getElementById('sim4d-slider-val').innerText = `Month ${month}`;
+      document.getElementById('sim4d-month-text').innerText = `Month ${month} of 24 (Progressive Build)`;
+      if (month < 6) {
+        document.getElementById('sim4d-image').src = 'assets/images/masterplan_3d_numbered.jpg';
+      } else if (month < 16) {
+        document.getElementById('sim4d-image').src = 'assets/images/villa_facade_exterior.jpg';
+      } else {
+        document.getElementById('sim4d-image').src = 'assets/images/villa_facade_dusk.jpg';
+      }
+    }
+
+    function downloadContractPDF() {
+      alert("Exporting FIDIC EPC Silver Book Turnkey Agreement for I LOVE BOSNIA (PDF with e-Signature tokens)... Download complete.");
+      closeModal('fidic-modal');
+    }
+
+    function approveMilestone() {
+      alert("FIDIC Independent Engineer Certification Recorded!\nPayment tranche released to Escrow Sub-Account.");
+      closePlotDrawer();
+    }
+
+    function generateFidicNotice() {
+      alert("FIDIC Sub-Clause 20.2 Notice of Claim drafted. 28-day statutory bar countdown anchored to ledger.");
+    }
+
+    function signMunicipal() {
+      alert("Breza Municipality Urban Planning Auditor: Signed.\nTranche release certified for 120 villas.");
+    }
+
+    function downloadOfficialInspectionCert() {
+      alert("Generating Sinteza CAD & FIDIC Independent Inspection Dossier #ILB-2026-04 (PDF)... Download complete.");
+    }
+
+    function scheduleSiteVisit() {
+      alert("VIP Site Tour Concierge: VIP transport from Sarajevo International Airport (SJJ) booked.");
+    }
+
+    function triggerSimulationModal() {
+      document.getElementById('sim-modal').classList.remove('hidden');
+      document.getElementById('sim-result').classList.add('hidden');
+    }
+
+    function runScenario(type) {
+      const res = document.getElementById('sim-result');
+      res.classList.remove('hidden');
+      res.innerHTML = `<strong>SIMULATION COMPLETE:</strong> Critical path float buffer remains resilient (+5.4d).`;
+    }
+
+    function dropSnagPin(event) {
+      const rect = event.currentTarget.getBoundingClientRect();
+      const x = ((event.clientX - rect.left) / rect.width) * 100;
+      const y = ((event.clientY - rect.top) / rect.height) * 100;
+      
+      const layer = document.getElementById('snag-pins-layer');
+      const pin = document.createElement('div');
+      pin.className = 'absolute -translate-x-1/2 -translate-y-1/2 pointer-events-auto cursor-pointer';
+      pin.style.left = `${x.toFixed(1)}%`;
+      pin.style.top = `${y.toFixed(1)}%`;
+      pin.onclick = (e) => { e.stopPropagation(); inspectPin('NEW-PIN'); };
+      pin.innerHTML = `<span class="w-5 h-5 rounded-full bg-emerald-500 text-black font-mono text-[10px] font-bold flex items-center justify-center shadow-lg border border-white animate-bounce">+</span>`;
+      layer.appendChild(pin);
+      alert(`Native CAD Plan Pin Dropped at [X: ${x.toFixed(1)}%, Y: ${y.toFixed(1)}%]!\nLogged into Internal Sovereign Defect Ledger.`);
+    }
+
+    function inspectPin(pinId) {
+      document.getElementById('snag-pin-badge').innerText = `${pinId} (SELECTED)`;
+      document.getElementById('snag-pin-title').innerText = pinId === 'PIN-01' ? 'Schüco Glazing Seal Gasket Gap' : 'Italian Porcelanosa Tile Edge Alignment';
+    }
+
+    function resolveSnagPin(pinId) {
+      alert(`Pin ${pinId} Resolved!\nSubcontractor sign-off confirmed by Sinteza Chief Engineer.`);
+      document.getElementById('snag-pin-badge').innerText = `${pinId} (RESOLVED)`;
+    }
+
+    function setCurrency(curr) {
+      currentCurrency = curr;
+      document.querySelectorAll('.curr-btn').forEach(b => {
+        b.classList.remove('bg-[#E5A93C]', 'text-black', 'font-bold');
+        b.classList.add('text-slate-400');
+      });
+      document.getElementById(`curr-${curr}`).classList.add('bg-[#E5A93C]', 'text-black', 'font-bold');
+      document.getElementById(`curr-${curr}`).classList.remove('text-slate-400');
+
+      const rate = RATES[curr];
+      const symbol = CURRENCY_SYMBOLS[curr];
+
+      const totalGDV = Math.round(54200000 * rate);
+      const paid = Math.round(37070000 * rate);
+      const escrow = Math.round(17130000 * rate);
+
+      document.getElementById('kpi-gdv').innerText = `${symbol}${totalGDV.toLocaleString()}`;
+      document.getElementById('kpi-paid').innerText = `${symbol}${(paid / 1000000).toFixed(2)}M`;
+      document.getElementById('kpi-escrow').innerText = `${symbol}${(escrow / 1000000).toFixed(2)}M`;
+      const lockVal = document.getElementById('escrow-locked-val');
+      if (lockVal) lockVal.innerText = `${symbol}${escrow.toLocaleString()}`;
+    }
+
+    let bimAnimId;
+    function initBimCanvas() {
+      const canvas = document.getElementById('bim-canvas');
+      if (!canvas) return;
+      const ctx = canvas.getContext('2d');
+      let angle = 0;
+
+      function renderFrame() {
+        ctx.fillStyle = '#050608';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+        ctx.strokeStyle = 'rgba(255, 255, 255, 0.05)';
+        ctx.lineWidth = 1;
+        const centerX = canvas.width / 2;
+        const centerY = canvas.height / 2 + 50;
+
+        for (let i = -6; i <= 6; i++) {
+          ctx.beginPath();
+          ctx.moveTo(centerX + (i * 30) - Math.cos(angle) * 20, centerY + (i * 15));
+          ctx.lineTo(centerX + (i * 30) + 180, centerY + (i * 15) - 90);
+          ctx.stroke();
+        }
+
+        for (let p = 0; p < 60; p++) {
+          const px = centerX + Math.cos(angle + p * 0.2) * (100 + (p * 2.5));
+          const py = centerY + Math.sin(angle + p * 0.2) * (50 + (p * 1.2)) - (p % 4 * 12);
+
+          ctx.fillStyle = (p % 3 === 0) ? '#10B981' : (p % 3 === 1) ? '#06B6D4' : '#E5A93C';
+          ctx.beginPath();
+          ctx.arc(px, py, 2.5, 0, Math.PI * 2);
+          ctx.fill();
+
+          if (p % 4 === 0) {
+            ctx.strokeStyle = 'rgba(229, 169, 60, 0.15)';
+            ctx.beginPath();
+            ctx.moveTo(px, py);
+            ctx.lineTo(px, py + 20);
+            ctx.stroke();
+          }
+        }
+
+        angle += 0.008;
+        bimAnimId = requestAnimationFrame(renderFrame);
+      }
+
+      if (bimAnimId) cancelAnimationFrame(bimAnimId);
+      renderFrame();
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      lucide.createIcons();
+      renderPlots(PLOTS);
+    });
+  </script>
+</body>
+</html>

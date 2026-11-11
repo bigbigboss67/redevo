@@ -1,0 +1,151 @@
+<main id="view-cockpit" class="tab-view space-y-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div class="card-bezel">
+          <div class="card-inner p-5 flex flex-col justify-between h-full space-y-3">
+            <span class="text-[11px] font-mono uppercase tracking-wider text-slate-400">Total Project GDV</span>
+            <div>
+              <div class="text-2xl font-bold font-mono tracking-tight text-white" id="kpi-gdv">€54,200,000</div>
+              <p class="text-xs text-slate-400 mt-1"><span class="text-emerald-400 font-mono">↑ 50/50 Schedule</span> Escrow drawdown 68.4%</p>
+            </div>
+            <div class="w-full bg-white/5 rounded-full h-1.5 overflow-hidden">
+              <div class="bg-gradient-to-r from-[#E5A93C] to-emerald-400 h-full rounded-full" style="width: 68.4%"></div>
+            </div>
+            <div class="flex justify-between text-[10px] font-mono text-slate-400">
+              <span>Paid: <strong class="text-white" id="kpi-paid">€37.07M</strong></span>
+              <span>In Escrow: <strong class="text-white" id="kpi-escrow">€17.13M</strong></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-bezel">
+          <div class="card-inner p-5 flex flex-col justify-between h-full space-y-3">
+            <span class="text-[11px] font-mono uppercase tracking-wider text-slate-400">Schedule Float Buffer</span>
+            <div>
+              <div class="text-2xl font-bold font-mono tracking-tight text-white">64.2% <span class="text-xs font-normal text-slate-400">(Target: 68.0%)</span></div>
+              <p class="text-xs text-slate-400 mt-1">Superstructure core ahead of target</p>
+            </div>
+            <div class="w-full bg-white/5 rounded-full h-1.5 overflow-hidden">
+              <div class="bg-emerald-400 h-full" style="width: 64.2%"></div>
+            </div>
+            <div class="flex justify-between text-[10px] font-mono text-slate-400">
+              <span>Critical Path: <strong class="text-emerald-400">OPTIMAL (+11.4d)</strong></span>
+              <span>Handover: Q2 2027</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-bezel">
+          <div class="card-inner p-5 flex flex-col justify-between h-full space-y-3">
+            <span class="text-[11px] font-mono uppercase tracking-wider text-slate-400">Turnstile Biometrics (Ulaz 1-7)</span>
+            <div>
+              <div class="text-2xl font-bold font-mono tracking-tight text-white">142 <span class="text-xs font-normal text-slate-400 font-sans">Active Craftsmen</span></div>
+              <p class="text-xs text-slate-400 mt-1">48 Rebar, 34 Concrete, 28 MEP, 12 QA</p>
+            </div>
+            <div class="flex items-center gap-2 text-[11px] font-mono text-slate-400">
+              <span class="w-2 h-2 rounded-full bg-emerald-400 pulsing-beacon"></span>
+              <span>412 Days Zero Lost-Time Incidents</span>
+            </div>
+            <div class="flex justify-between text-[10px] font-mono text-slate-400">
+              <span>Weather: <strong class="text-white">12°C Clear, Breza Valley</strong></span>
+              <span>Wind: 8 km/h</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-bezel">
+          <div class="card-inner p-5 flex flex-col justify-between h-full space-y-3">
+            <span class="text-[11px] font-mono uppercase tracking-wider text-slate-400">FIDIC QA Pass Rate</span>
+            <div>
+              <div class="text-2xl font-bold font-mono tracking-tight text-white">€0 <span class="text-xs font-normal text-slate-400 font-sans">Active Penalties</span></div>
+              <p class="text-xs text-slate-400 mt-1">Avg contractor snag fix: 18.4 hrs (SLA: 24h)</p>
+            </div>
+            <div class="w-full bg-white/5 rounded-full h-1.5 overflow-hidden">
+              <div class="bg-emerald-400 h-full" style="width: 98.2%"></div>
+            </div>
+            <div class="flex justify-between text-[10px] font-mono text-slate-400">
+              <span>Sinteza CAD Audit: <strong class="text-white">Active</strong></span>
+              <span>120 Plots Checked</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+        <div class="lg:col-span-8 card-bezel">
+          <div class="card-inner p-6 space-y-6">
+            <div class="flex justify-between items-center pb-4 border-b border-white/5">
+              <div>
+                <span class="text-[10px] font-mono uppercase tracking-[0.2em] text-[#E5A93C]">Master Plan Zoning & Progress</span>
+                <h2 class="text-lg font-bold text-white tracking-tight">120 Luxury 4-Bedroom Villas (300 m² BUA Each)</h2>
+              </div>
+              <button onclick="switchTab('matrix')" class="px-3.5 py-1.5 rounded-full bg-white/5 hover:bg-white/10 text-xs font-mono text-[#E5A93C] border border-[#E5A93C]/30 flex items-center gap-1.5 transition">
+                <i data-lucide="grid" class="w-3.5 h-3.5"></i> Inspect 120 Plots
+              </button>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <div class="relative group rounded-2xl overflow-hidden border border-white/10 bg-black aspect-[4/3]">
+                <img src="assets/images/villa_facade_exterior.jpg" alt="Villa Exterior" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex flex-col justify-end p-3">
+                  <span class="text-[10px] font-mono text-[#E5A93C] font-semibold">CLUSTER ALPHA (K01 - K30)</span>
+                  <p class="text-xs font-bold text-white">Signature Contemporary Villas</p>
+                  <span class="text-[10px] text-emerald-400 font-mono mt-0.5">85% Complete (Fitout)</span>
+                </div>
+              </div>
+
+              <div class="relative group rounded-2xl overflow-hidden border border-white/10 bg-black aspect-[4/3]">
+                <img src="assets/images/villa_facade_dusk.jpg" alt="Villa Dusk" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex flex-col justify-end p-3">
+                  <span class="text-[10px] font-mono text-[#E5A93C] font-semibold">CLUSTER BETA (K31 - K75)</span>
+                  <p class="text-xs font-bold text-white">Hillside Panoramic Villas</p>
+                  <span class="text-[10px] text-cyan-400 font-mono mt-0.5">62% Superstructure Core</span>
+                </div>
+              </div>
+
+              <div class="relative group rounded-2xl overflow-hidden border border-white/10 bg-black aspect-[4/3]">
+                <img src="assets/images/villa_rear_garden_pool.jpg" alt="Rear Garden Pool" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex flex-col justify-end p-3">
+                  <span class="text-[10px] font-mono text-[#E5A93C] font-semibold">CLUSTER GAMMA (K76 - K120)</span>
+                  <p class="text-xs font-bold text-white">Valley Garden Estates</p>
+                  <span class="text-[10px] text-amber-400 font-mono mt-0.5">48% Ground Foundations</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-4 card-bezel">
+          <div class="card-inner p-6 space-y-4 flex flex-col justify-between h-full">
+            <div>
+              <div class="flex items-center justify-between pb-3 border-b border-white/5">
+                <h3 class="text-sm font-bold text-white flex items-center gap-2">
+                  <i data-lucide="radio" class="w-4 h-4 text-[#E5A93C]"></i> Live Telemetry Feed
+                </h3>
+                <span class="text-[10px] font-mono text-slate-500">Live Socket</span>
+              </div>
+              <div class="mt-4 space-y-3 text-xs">
+                <div class="p-3 rounded-xl bg-white/[0.02] border border-white/5">
+                  <div class="flex items-center justify-between text-[10px] font-mono">
+                    <span class="text-[#E5A93C] font-semibold">PLOT K-018 // POUR #4</span>
+                    <span class="text-slate-500">07:18 CET</span>
+                  </div>
+                  <p class="text-slate-200 mt-1 font-medium">Batch C30/37 (42m³) Foundation Slab Certified</p>
+                  <p class="text-[10px] text-slate-400 mt-0.5">Slump: 180mm • 28-day cylinder strength: 38.4 MPa</p>
+                </div>
+                <div class="p-3 rounded-xl bg-white/[0.02] border border-white/5">
+                  <div class="flex items-center justify-between text-[10px] font-mono">
+                    <span class="text-emerald-400 font-semibold">SUPPLY CHAIN // BORDER CLEARANCE</span>
+                    <span class="text-slate-500">06:40 CET</span>
+                  </div>
+                  <p class="text-slate-200 mt-1 font-medium">Schüco AWS 75.SI+ Glazing Convoy Arrived</p>
+                  <p class="text-[10px] text-slate-400 mt-0.5">32 crates cleared at Gradina border • Staged in Depot 2</p>
+                </div>
+              </div>
+            </div>
+            <button onclick="inspectPlotDetails('K-018')" class="w-full py-2 px-3 rounded-xl bg-white/5 hover:bg-white/10 text-xs font-mono text-slate-300 text-center transition flex items-center justify-center gap-2">
+              <i data-lucide="eye" class="w-3.5 h-3.5 text-[#E5A93C]"></i> Deep Inspect Plot K-018
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>

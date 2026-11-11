@@ -1,0 +1,427 @@
+<section id="view-bizdev-engine" class="tab-view hidden space-y-6">
+      <div class="card-bezel">
+        <div class="card-inner p-6 space-y-6">
+          
+          <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4 pb-4 border-b border-white/5">
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="text-xs font-mono text-[#E5A93C] uppercase tracking-wider font-bold">MULTIMODAL AI PROJECT INGESTION & SYNTHESIS</span>
+                <span class="px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 text-[10px] font-mono">SOVEREIGN INTERNAL STACK</span>
+              </div>
+              <h2 class="text-xl font-bold text-white tracking-tight mt-1">Internal Document Ingestion, Generative Timeframe, Feasibility & Collections Engine</h2>
+            </div>
+            
+            <div class="flex flex-wrap items-center gap-2">
+              <button onclick="openModal('ve-modal')" class="px-3.5 py-1.5 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 text-xs font-mono hover:bg-emerald-500/20 transition flex items-center gap-1.5">
+                <i data-lucide="trending-down" class="w-3.5 h-3.5"></i> Value Engineering (-€1.42M)
+              </button>
+              <button onclick="openModal('banking-modal')" class="px-3.5 py-1.5 rounded-full bg-cyan-500/10 text-cyan-400 border border-cyan-500/20 text-xs font-mono hover:bg-cyan-500/20 transition flex items-center gap-1.5">
+                <i data-lucide="link" class="w-3.5 h-3.5"></i> Bank Webhook Sync
+              </button>
+              <button onclick="openModal('sim4d-modal')" class="px-3.5 py-1.5 rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/20 text-xs font-mono hover:bg-blue-500/20 transition flex items-center gap-1.5">
+                <i data-lucide="play-circle" class="w-3.5 h-3.5"></i> 4D Build Sim (24 Mo)
+              </button>
+              <button onclick="openModal('fidic-modal')" class="px-3.5 py-1.5 rounded-full bg-amber-500/10 text-amber-400 border border-amber-500/20 text-xs font-mono hover:bg-amber-500/20 transition flex items-center gap-1.5">
+                <i data-lucide="scroll" class="w-3.5 h-3.5"></i> Auto-Draft FIDIC Contract
+              </button>
+              <button onclick="triggerAiSynthesis()" id="btn-synthesize" class="px-4 py-2 rounded-full bg-gradient-to-r from-[#E5A93C] to-[#F7D070] text-black font-bold text-xs hover:shadow-lg hover:shadow-[#E5A93C]/20 transition flex items-center gap-2">
+                <i data-lucide="sparkles" class="w-4 h-4 text-black"></i> Re-Synthesize Project
+              </button>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-5">
+            <div class="lg:col-span-5 p-5 rounded-2xl bg-white/[0.02] border-2 border-dashed border-white/10 hover:border-[#E5A93C]/50 transition flex flex-col justify-center items-center text-center space-y-3 cursor-pointer group" onclick="simulateFileUpload()">
+              <div class="w-12 h-12 rounded-2xl bg-white/5 group-hover:bg-[#E5A93C]/20 text-slate-400 group-hover:text-[#E5A93C] flex items-center justify-center transition">
+                <i data-lucide="upload-cloud" class="w-6 h-6"></i>
+              </div>
+              <div>
+                <h4 class="text-xs font-bold text-white group-hover:text-[#E5A93C] transition">Drop Project Dossiers Here or Browse</h4>
+                <p class="text-[11px] text-slate-400 mt-1 max-w-xs">Upload Architecture (IFC/CAD), Feasibility Studies (PDF), Financial Models (XLSX), Geotechnical Surveys.</p>
+              </div>
+              <span class="text-[10px] font-mono px-2.5 py-1 rounded-full bg-white/5 text-slate-400">PDF, IFC, DWG, XLSX, DOCX up to 500MB</span>
+            </div>
+
+            <div class="lg:col-span-7 space-y-2.5">
+              <div class="text-[10px] font-mono uppercase tracking-wider text-slate-400 flex justify-between">
+                <span>Ingested Project Dossiers (Parsed & Vectorized)</span>
+                <span class="text-emerald-400">4 of 4 Verified</span>
+              </div>
+              <div class="p-3 rounded-xl bg-white/[0.02] border border-white/5 flex items-center justify-between text-xs font-mono">
+                <div class="flex items-center gap-3">
+                  <div class="w-8 h-8 rounded-lg bg-rose-500/10 text-rose-400 flex items-center justify-center"><i data-lucide="file-text" class="w-4 h-4"></i></div>
+                  <div>
+                    <div class="text-white font-bold">ILB_Master_Feasibility_Study_Breza_2026.pdf</div>
+                    <span class="text-[10px] text-slate-400">148 Pages • DCF Underwriting, Demographic Absorption & Yield</span>
+                  </div>
+                </div>
+                <span class="px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 text-[10px]">PARSED</span>
+              </div>
+              <div class="p-3 rounded-xl bg-white/[0.02] border border-white/5 flex items-center justify-between text-xs font-mono">
+                <div class="flex items-center gap-3">
+                  <div class="w-8 h-8 rounded-lg bg-cyan-500/10 text-cyan-400 flex items-center justify-center"><i data-lucide="box" class="w-4 h-4"></i></div>
+                  <div>
+                    <div class="text-white font-bold">Sinteza_CAD_120_Villas_Architecture_BIM.ifc</div>
+                    <span class="text-[10px] text-slate-400">340 MB • 120 Plots Structural Geometry, Bill of Quantities</span>
+                  </div>
+                </div>
+                <span class="px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 text-[10px]">PARSED</span>
+              </div>
+              <div class="p-3 rounded-xl bg-white/[0.02] border border-white/5 flex items-center justify-between text-xs font-mono">
+                <div class="flex items-center gap-3">
+                  <div class="w-8 h-8 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center"><i data-lucide="table" class="w-4 h-4"></i></div>
+                  <div>
+                    <div class="text-white font-bold">ILB_50_50_OffPlan_Financial_ProForma_v4.xlsx</div>
+                    <span class="text-[10px] text-slate-400">38 Sheets • 120-Villa Cash Collections, S-Curves, IRR 26.4%</span>
+                  </div>
+                </div>
+                <span class="px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 text-[10px]">PARSED</span>
+              </div>
+              <div class="p-3 rounded-xl bg-white/[0.02] border border-white/5 flex items-center justify-between text-xs font-mono">
+                <div class="flex items-center gap-3">
+                  <div class="w-8 h-8 rounded-lg bg-amber-500/10 text-amber-400 flex items-center justify-center"><i data-lucide="mountain" class="w-4 h-4"></i></div>
+                  <div>
+                    <div class="text-white font-bold">Breza_Valley_Geotechnical_Soil_Borehole_Report.pdf</div>
+                    <span class="text-[10px] text-slate-400">62 Pages • 250 kPa Bedrock Bearing, Hillside Drainage</span>
+                  </div>
+                </div>
+                <span class="px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 text-[10px]">PARSED</span>
+              </div>
+            </div>
+          </div>
+
+          <div id="synthesis-banner" class="p-4 rounded-xl bg-[#E5A93C]/10 border border-[#E5A93C]/30 text-xs font-mono text-white hidden">
+            <div class="flex items-center justify-between">
+              <span class="font-bold flex items-center gap-2 text-[#E5A93C]">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-[#E5A93C]"></i>
+                AI SYNTHESIS ACTIVE: Generating WBS Timeline, Financial Model, Risk Register & Collections Ledger...
+              </span>
+              <span class="text-emerald-400 font-bold">100% COMPLETE</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- 6 Sovereign Sub-Views -->
+      <div class="card-bezel">
+        <div class="card-inner p-6 space-y-6">
+          <div class="flex flex-wrap items-center justify-between gap-3 pb-4 border-b border-white/5">
+            <div class="flex flex-wrap items-center p-1 bg-black/40 rounded-full border border-white/5 text-xs font-mono">
+              <button onclick="switchBizSubTab('timeframe')" id="biz-sub-timeframe" class="biz-tab px-3.5 py-1.5 rounded-full bg-white/10 text-white font-semibold transition">
+                1. Generative WBS Timeframe
+              </button>
+              <button onclick="switchBizSubTab('business-model')" id="biz-sub-business-model" class="biz-tab px-3.5 py-1.5 rounded-full text-slate-400 hover:text-white transition">
+                2. Business Model & Underwriting
+              </button>
+              <button onclick="switchBizSubTab('risk-mgmt')" id="biz-sub-risk-mgmt" class="biz-tab px-3.5 py-1.5 rounded-full text-slate-400 hover:text-white transition">
+                3. Risk Management Matrix
+              </button>
+              <button onclick="switchBizSubTab('collections')" id="biz-sub-collections" class="biz-tab px-3.5 py-1.5 rounded-full text-slate-400 hover:text-white transition">
+                4. Collections & Cash Flow S-Curve
+              </button>
+              <button onclick="switchBizSubTab('internal-erp')" id="biz-sub-internal-erp" class="biz-tab px-3.5 py-1.5 rounded-full text-slate-400 hover:text-white transition">
+                5. Sovereign Internal ERP Ledger
+              </button>
+              <button onclick="switchBizSubTab('snagging-canvas')" id="biz-sub-snagging-canvas" class="biz-tab px-3.5 py-1.5 rounded-full text-slate-400 hover:text-white transition">
+                6. Native CAD Plan Snagging Tool
+              </button>
+            </div>
+            <span class="text-[11px] font-mono text-slate-400">100% Native Internal Stack</span>
+          </div>
+
+          <!-- Sub 1: Timeframe -->
+          <div id="biz-view-timeframe" class="biz-view space-y-4">
+            <div class="flex justify-between items-center text-xs">
+              <div>
+                <h3 class="text-sm font-bold text-white">Generative WBS & Critical Path Schedule</h3>
+                <p class="text-slate-400 text-[11px]">Auto-sequenced across 120 plots factoring Breza frost constraints & labor availability</p>
+              </div>
+              <span class="px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 font-mono text-xs border border-emerald-500/20">Optimal Scenario: +11.4 Days Buffer</span>
+            </div>
+            <div class="space-y-2 font-mono text-xs">
+              <div class="p-3 rounded-xl bg-white/[0.02] border border-white/5 flex flex-col md:flex-row md:items-center justify-between gap-3">
+                <div class="w-full md:w-1/3"><span class="text-[#E5A93C] font-bold">PHASE 1: Master Planning & Permitting</span></div>
+                <div class="text-[11px] text-slate-300">Jan 2026 - May 2026</div>
+                <div class="w-32 bg-white/10 h-1.5 rounded-full overflow-hidden"><div class="bg-emerald-400 h-full" style="width: 100%"></div></div>
+                <span class="px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 text-[10px]">100% COMPLETE</span>
+              </div>
+              <div class="p-3 rounded-xl bg-white/[0.02] border border-white/5 flex flex-col md:flex-row md:items-center justify-between gap-3">
+                <div class="w-full md:w-1/3"><span class="text-[#E5A93C] font-bold">PHASE 2: Geotechnical Excavation & Infrastructure</span></div>
+                <div class="text-[11px] text-slate-300">May 2026 - Sep 2026</div>
+                <div class="w-32 bg-white/10 h-1.5 rounded-full overflow-hidden"><div class="bg-emerald-400 h-full" style="width: 100%"></div></div>
+                <span class="px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 text-[10px]">100% COMPLETE</span>
+              </div>
+              <div class="p-3 rounded-xl bg-white/[0.02] border border-white/5 flex flex-col md:flex-row md:items-center justify-between gap-3">
+                <div class="w-full md:w-1/3"><span class="text-[#E5A93C] font-bold">PHASE 3: Foundation Slabs & Retaining Terraces</span></div>
+                <div class="text-[11px] text-slate-300">Aug 2026 - Dec 2026</div>
+                <div class="w-32 bg-white/10 h-1.5 rounded-full overflow-hidden"><div class="bg-cyan-400 h-full" style="width: 88%"></div></div>
+                <span class="px-2 py-0.5 rounded bg-cyan-500/10 text-cyan-400 text-[10px]">88% IN PROGRESS</span>
+              </div>
+              <div class="p-3 rounded-xl bg-white/[0.02] border border-white/5 flex flex-col md:flex-row md:items-center justify-between gap-3">
+                <div class="w-full md:w-1/3"><span class="text-[#E5A93C] font-bold">PHASE 4: Superstructure Concrete & Upper Slabs</span></div>
+                <div class="text-[11px] text-slate-300">Oct 2026 - Apr 2027</div>
+                <div class="w-32 bg-white/10 h-1.5 rounded-full overflow-hidden"><div class="bg-blue-400 h-full" style="width: 54%"></div></div>
+                <span class="px-2 py-0.5 rounded bg-blue-500/10 text-blue-400 text-[10px]">54% ACTIVE</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sub 2: Business Model Underwriting -->
+          <div id="biz-view-business-model" class="biz-view hidden space-y-4">
+            <div class="flex justify-between items-center text-xs">
+              <h3 class="text-sm font-bold text-white">Institutional Feasibility & DCF Underwriting Pro-Forma</h3>
+              <span class="text-slate-400 font-mono text-[11px]">Standard: UNIDO / RICS</span>
+            </div>
+            <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 gap-3 font-mono">
+              <div class="p-3 rounded-xl bg-white/[0.02] border border-white/5">
+                <span class="text-[10px] text-slate-400">GROSS GDV</span>
+                <div class="text-base font-bold text-white mt-1">€54,200,000</div>
+              </div>
+              <div class="p-3 rounded-xl bg-white/[0.02] border border-white/5">
+                <span class="text-[10px] text-slate-400">TOTAL COST (TDC)</span>
+                <div class="text-base font-bold text-white mt-1">€33,480,000</div>
+              </div>
+              <div class="p-3 rounded-xl bg-white/[0.02] border border-white/5">
+                <span class="text-[10px] text-slate-400">DEVELOPER PROFIT</span>
+                <div class="text-base font-bold text-emerald-400 mt-1">€20,720,000</div>
+              </div>
+              <div class="p-3 rounded-xl bg-white/[0.02] border border-white/5">
+                <span class="text-[10px] text-slate-400">PROJECT IRR</span>
+                <div class="text-base font-bold text-cyan-400 mt-1">26.4%</div>
+              </div>
+              <div class="p-3 rounded-xl bg-white/[0.02] border border-white/5">
+                <span class="text-[10px] text-slate-400">PROJECT NPV</span>
+                <div class="text-base font-bold text-white mt-1">€14,850,000</div>
+              </div>
+              <div class="p-3 rounded-xl bg-white/[0.02] border border-white/5">
+                <span class="text-[10px] text-slate-400">EQUITY MULTIPLE</span>
+                <div class="text-base font-bold text-emerald-400 mt-1">2.14x</div>
+              </div>
+              <div class="p-3 rounded-xl bg-white/[0.02] border border-white/5">
+                <span class="text-[10px] text-slate-400">PAYBACK</span>
+                <div class="text-base font-bold text-white mt-1">22 Months</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sub 3: Risk Management -->
+          <div id="biz-view-risk-mgmt" class="biz-view hidden space-y-4">
+            <div class="flex justify-between items-center text-xs">
+              <h3 class="text-sm font-bold text-white">Monte Carlo Quantitative Project Risk Register</h3>
+              <span class="px-2.5 py-1 rounded bg-cyan-500/10 text-cyan-400 font-mono text-[11px]">Contingency Reserve: €1,850,000 Allocated</span>
+            </div>
+            <div class="overflow-x-auto">
+              <table class="w-full text-left text-xs text-slate-300 font-mono border-collapse">
+                <thead>
+                  <tr class="border-b border-white/10 text-[10px] uppercase text-slate-400 bg-white/[0.02]">
+                    <th class="py-2.5 px-3">Risk ID</th>
+                    <th class="py-2.5 px-3">Scenario</th>
+                    <th class="py-2.5 px-3">Probability</th>
+                    <th class="py-2.5 px-3">Exposure</th>
+                    <th class="py-2.5 px-3">Mitigation</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-white/5">
+                  <tr class="hover:bg-white/[0.02]">
+                    <td class="py-2.5 px-3 text-[#E5A93C] font-bold">RSK-01</td>
+                    <td class="py-2.5 px-3 font-sans text-white">Geotechnical Fissures in Terrace 3</td>
+                    <td class="py-2.5 px-3 text-amber-400">Low (14%)</td>
+                    <td class="py-2.5 px-3">€85,000</td>
+                    <td class="py-2.5 px-3 text-emerald-400">Tie-backs installed</td>
+                  </tr>
+                  <tr class="hover:bg-white/[0.02]">
+                    <td class="py-2.5 px-3 text-[#E5A93C] font-bold">RSK-02</td>
+                    <td class="py-2.5 px-3 font-sans text-white">Breza Alpine Freeze (-10°C)</td>
+                    <td class="py-2.5 px-3 text-cyan-400">Med (48%)</td>
+                    <td class="py-2.5 px-3">€42,000</td>
+                    <td class="py-2.5 px-3 text-emerald-400">Heated formwork & float</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Sub 4: Collections -->
+          <div id="biz-view-collections" class="biz-view hidden space-y-4">
+            <div class="flex justify-between items-center text-xs">
+              <h3 class="text-sm font-bold text-white">120-Villa Off-Plan Collections & Escrow Cash-In S-Curve</h3>
+              <button onclick="sendAutomatedTrancheInvoices()" class="px-3.5 py-1.5 rounded-full bg-[#E5A93C] text-black font-bold text-xs flex items-center gap-1.5">
+                <i data-lucide="send" class="w-3.5 h-3.5"></i> Send 120 Tranche Notices
+              </button>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-4 gap-4 font-mono">
+              <div class="p-4 rounded-xl bg-white/[0.02] border border-white/5 space-y-1">
+                <span class="text-[10px] text-slate-400">CONTRACTED REVENUE</span>
+                <div class="text-lg font-bold text-white">€54,200,000</div>
+              </div>
+              <div class="p-4 rounded-xl bg-white/[0.02] border border-white/5 space-y-1">
+                <span class="text-[10px] text-slate-400">ACTUAL CASH COLLECTED</span>
+                <div class="text-lg font-bold text-emerald-400">€37,070,000</div>
+                <span class="text-[10px] text-emerald-400">68.4% Recovered</span>
+              </div>
+              <div class="p-4 rounded-xl bg-white/[0.02] border border-white/5 space-y-1">
+                <span class="text-[10px] text-slate-400">IN ESCROW CUSTODY</span>
+                <div class="text-lg font-bold text-cyan-400">€17,130,000</div>
+              </div>
+              <div class="p-4 rounded-xl bg-white/[0.02] border border-rose-500/20 space-y-1">
+                <span class="text-[10px] text-rose-400 font-semibold">OVERDUE / DELINQUENT</span>
+                <div class="text-lg font-bold text-rose-400">€42,500</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sub 5: Sovereign Internal ERP -->
+          <div id="biz-view-internal-erp" class="biz-view hidden space-y-4">
+            <div class="flex justify-between items-center text-xs">
+              <div>
+                <h3 class="text-sm font-bold text-white">Sovereign Internal ERP & Double-Entry General Ledger</h3>
+                <p class="text-slate-400 text-[11px]">100% Internal Self-Hosted Accounting • Zero Third-Party SaaS Reliance</p>
+              </div>
+              <span class="px-2.5 py-1 rounded bg-emerald-500/10 text-emerald-400 font-mono text-[11px]">Trial Balance: PERFECTLY BALANCED (€79,445,000)</span>
+            </div>
+            <div class="overflow-x-auto">
+              <table class="w-full text-left text-xs text-slate-300 font-mono border-collapse">
+                <thead>
+                  <tr class="border-b border-white/10 text-[10px] uppercase text-slate-400 bg-white/[0.02]">
+                    <th class="py-2.5 px-3">Code</th>
+                    <th class="py-2.5 px-3">Account Description</th>
+                    <th class="py-2.5 px-3">Type</th>
+                    <th class="py-2.5 px-3">Debit (€)</th>
+                    <th class="py-2.5 px-3">Credit (€)</th>
+                    <th class="py-2.5 px-3">Internal Status</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-white/5">
+                  <tr class="hover:bg-white/[0.02]">
+                    <td class="py-2.5 px-3 text-[#E5A93C] font-bold">1010</td>
+                    <td class="py-2.5 px-3 font-sans text-white">UniCredit Escrow Trust Account</td>
+                    <td class="py-2.5 px-3 text-cyan-400">Asset</td>
+                    <td class="py-2.5 px-3 text-emerald-400">€17,130,000</td>
+                    <td class="py-2.5 px-3 text-slate-600">—</td>
+                    <td class="py-2.5 px-3 text-emerald-400">Reconciled</td>
+                  </tr>
+                  <tr class="hover:bg-white/[0.02]">
+                    <td class="py-2.5 px-3 text-[#E5A93C] font-bold">1020</td>
+                    <td class="py-2.5 px-3 font-sans text-white">Operating Project Cash</td>
+                    <td class="py-2.5 px-3 text-cyan-400">Asset</td>
+                    <td class="py-2.5 px-3 text-emerald-400">€4,820,000</td>
+                    <td class="py-2.5 px-3 text-slate-600">—</td>
+                    <td class="py-2.5 px-3 text-emerald-400">Reconciled</td>
+                  </tr>
+                  <tr class="hover:bg-white/[0.02]">
+                    <td class="py-2.5 px-3 text-[#E5A93C] font-bold">1200</td>
+                    <td class="py-2.5 px-3 font-sans text-white">Accounts Receivable (120 Buyers)</td>
+                    <td class="py-2.5 px-3 text-cyan-400">Asset</td>
+                    <td class="py-2.5 px-3 text-emerald-400">€17,130,000</td>
+                    <td class="py-2.5 px-3 text-slate-600">—</td>
+                    <td class="py-2.5 px-3 text-cyan-400">Active Tranches</td>
+                  </tr>
+                  <tr class="hover:bg-white/[0.02]">
+                    <td class="py-2.5 px-3 text-[#E5A93C] font-bold">1400</td>
+                    <td class="py-2.5 px-3 font-sans text-white">WIP Construction Asset (Capitalized)</td>
+                    <td class="py-2.5 px-3 text-cyan-400">Asset</td>
+                    <td class="py-2.5 px-3 text-emerald-400">€28,450,000</td>
+                    <td class="py-2.5 px-3 text-slate-600">—</td>
+                    <td class="py-2.5 px-3 text-emerald-400">BOQ Matched</td>
+                  </tr>
+                  <tr class="hover:bg-white/[0.02]">
+                    <td class="py-2.5 px-3 text-[#E5A93C] font-bold">2010</td>
+                    <td class="py-2.5 px-3 font-sans text-white">Retainage Payable (10% FIDIC)</td>
+                    <td class="py-2.5 px-3 text-amber-400">Liability</td>
+                    <td class="py-2.5 px-3 text-slate-600">—</td>
+                    <td class="py-2.5 px-3 text-amber-400">€2,845,000</td>
+                    <td class="py-2.5 px-3 text-emerald-400">Held in Custody</td>
+                  </tr>
+                  <tr class="hover:bg-white/[0.02]">
+                    <td class="py-2.5 px-3 text-[#E5A93C] font-bold">3010</td>
+                    <td class="py-2.5 px-3 font-sans text-white">Developer Paid-In Equity</td>
+                    <td class="py-2.5 px-3 text-purple-400">Equity</td>
+                    <td class="py-2.5 px-3 text-slate-600">—</td>
+                    <td class="py-2.5 px-3 text-purple-400">€12,000,000</td>
+                    <td class="py-2.5 px-3 text-emerald-400">Locked Baseline</td>
+                  </tr>
+                  <tr class="hover:bg-white/[0.02]">
+                    <td class="py-2.5 px-3 text-[#E5A93C] font-bold">4010</td>
+                    <td class="py-2.5 px-3 font-sans text-white">Recognized Villa Contract Revenue</td>
+                    <td class="py-2.5 px-3 text-emerald-400">Revenue</td>
+                    <td class="py-2.5 px-3 text-slate-600">—</td>
+                    <td class="py-2.5 px-3 text-emerald-400">€54,200,000</td>
+                    <td class="py-2.5 px-3 text-emerald-400">120 Units Sold</td>
+                  </tr>
+                  <tr class="hover:bg-white/[0.02]">
+                    <td class="py-2.5 px-3 text-[#E5A93C] font-bold">5010</td>
+                    <td class="py-2.5 px-3 font-sans text-white">Cost of Goods Sold (Certified Draws)</td>
+                    <td class="py-2.5 px-3 text-rose-400">Expense</td>
+                    <td class="py-2.5 px-3 text-rose-400">€11,915,000</td>
+                    <td class="py-2.5 px-3 text-slate-600">—</td>
+                    <td class="py-2.5 px-3 text-emerald-400">FIDIC Certified</td>
+                  </tr>
+                  <tr class="bg-white/5 font-bold text-white">
+                    <td colspan="3" class="py-2.5 px-3 uppercase text-[10px] text-slate-400">TOTAL BALANCED TRIAL BALANCE</td>
+                    <td class="py-2.5 px-3 text-emerald-400">€79,445,000</td>
+                    <td class="py-2.5 px-3 text-emerald-400">€79,445,000</td>
+                    <td class="py-2.5 px-3 text-emerald-400">100% BALANCED</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Sub 6: Native Snagging Tool -->
+          <div id="biz-view-snagging-canvas" class="biz-view hidden space-y-4">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs">
+              <div>
+                <h3 class="text-sm font-bold text-white">Native CAD Architectural Plan Snagging Pin Tool</h3>
+                <p class="text-slate-400 text-[11px]">Click anywhere on the 300m² Villa Layout to drop defect punch pins with 24h SLA timers</p>
+              </div>
+              <span class="px-2.5 py-1 rounded bg-[#E5A93C]/10 text-[#E5A93C] font-mono text-[11px]">Click Plan to Drop Pin</span>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-5">
+              <div class="lg:col-span-8 relative rounded-2xl overflow-hidden border border-white/10 bg-black cursor-crosshair group" onclick="dropSnagPin(event)">
+                <img id="snag-floorplan-img" src="assets/images/villa_floorplan_300m2.jpg" alt="Villa Architectural Floorplan" class="w-full h-auto object-contain select-none">
+                <div id="snag-pins-layer" class="absolute inset-0 pointer-events-none">
+                  <div class="absolute top-[38%] left-[45%] -translate-x-1/2 -translate-y-1/2 pointer-events-auto cursor-pointer" onclick="event.stopPropagation(); inspectPin('PIN-01')">
+                    <span class="w-5 h-5 rounded-full bg-rose-500 text-white font-mono text-[10px] font-bold flex items-center justify-center shadow-lg border border-white animate-pulse">1</span>
+                  </div>
+                  <div class="absolute top-[62%] left-[72%] -translate-x-1/2 -translate-y-1/2 pointer-events-auto cursor-pointer" onclick="event.stopPropagation(); inspectPin('PIN-02')">
+                    <span class="w-5 h-5 rounded-full bg-amber-500 text-black font-mono text-[10px] font-bold flex items-center justify-center shadow-lg border border-white">2</span>
+                  </div>
+                </div>
+                <div class="absolute bottom-2 left-2 px-2.5 py-1 rounded bg-black/85 text-[10px] font-mono text-slate-300">
+                  Villa Signature Floorplan (300 m² BUA) • Ground & Upper Suite
+                </div>
+              </div>
+
+              <div class="lg:col-span-4 space-y-3 font-mono text-xs">
+                <div class="p-4 rounded-xl bg-white/[0.02] border border-white/5 space-y-2">
+                  <div class="flex justify-between items-center">
+                    <span class="text-[#E5A93C] font-bold" id="snag-pin-badge">PIN-01 (ACTIVE)</span>
+                    <span class="px-2 py-0.5 rounded bg-rose-500/10 text-rose-400 text-[10px]">CRITICAL SLA</span>
+                  </div>
+                  <h4 class="font-bold text-white font-sans text-sm" id="snag-pin-title">Schüco Glazing Seal Gasket Gap</h4>
+                  <div class="text-[11px] text-slate-400 space-y-1">
+                    <div>Location: Master Bedroom Terrace Pavilion</div>
+                    <div>Assigned: Alu-Façade Austria</div>
+                    <div>SLA Timer: <strong class="text-rose-400">14h 22m Remaining</strong></div>
+                    <div>Penalty Trigger: €2,500 / day deduction</div>
+                  </div>
+                  <button onclick="resolveSnagPin('PIN-01')" class="w-full mt-2 py-1.5 rounded-lg bg-emerald-500/20 text-emerald-400 hover:bg-emerald-500/30 border border-emerald-500/30 text-[10px] font-bold transition">
+                    ✓ Sign-Off & Resolve Defect Pin
+                  </button>
+                </div>
+
+                <div class="p-3 bg-white/[0.02] rounded-xl border border-white/5 text-[10px] text-slate-400 space-y-1">
+                  <div class="text-white font-bold">100% Native Internal Defect Governance:</div>
+                  <div>• Coordinate pinned directly to plan</div>
+                  <div>• Subcontractor penalty timers tick live</div>
+                  <div>• Linked to individual villa escrow drawdown gate</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>

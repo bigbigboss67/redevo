@@ -1,0 +1,76 @@
+<section id="view-fidic-claims" class="tab-view hidden space-y-6">
+  <div class="card-bezel">
+    <div class="card-inner p-6 space-y-6">
+      
+      <!-- Header -->
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-4 border-b border-slate-100 dark:border-white/5">
+        <div>
+          <div class="flex items-center gap-2">
+            <span class="text-xs font-mono font-bold text-amber-600 dark:text-amber-400 uppercase tracking-wider">LEGAL FIDIC 2017 CLAIMS & ISO 19650 CDE</span>
+            <span class="px-2.5 py-0.5 rounded-full bg-rose-500/10 border border-rose-500/20 text-[10px] font-mono text-rose-600 dark:text-rose-400 font-semibold">28-DAY TIME-BAR SHIELD</span>
+          </div>
+          <h2 class="text-xl font-bold text-slate-900 dark:text-white tracking-tight mt-1">
+            Contractual Claims, EOT Early Warnings & Statutory Time-Bar Engine
+          </h2>
+          <p class="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
+            Under FIDIC Sub-Clause 20.2, contractor notices submitted after 28 days are legally barred and forfeit.
+          </p>
+        </div>
+
+        <div class="flex items-center gap-3">
+          <button onclick="generateFidicNotice()" class="px-3.5 py-1.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs font-mono transition flex items-center gap-1.5 shadow-sm">
+            <i data-lucide="file-plus-2" class="w-3.5 h-3.5"></i> Draft Sub-Clause 20.2 Notice
+          </button>
+        </div>
+      </div>
+
+      <!-- Real-World Claims Register Table (Oracle Primavera / FIDIC Standard) -->
+      <div class="p-4 rounded-2xl bg-slate-50 dark:bg-white/[0.02] border border-slate-200 dark:border-white/5 space-y-3 font-mono text-xs">
+        <div class="flex items-center justify-between">
+          <h4 class="font-bold text-slate-900 dark:text-white text-xs">Active Project Claims & EOT (Extension of Time) Log</h4>
+          <span class="text-[11px] text-slate-400">Total Claim Exposure: €0 Approved</span>
+        </div>
+
+        <div class="space-y-2">
+          
+          <!-- Claim 1 -->
+          <div class="p-3.5 rounded-xl bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 flex flex-col md:flex-row md:items-center justify-between gap-3">
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="font-bold text-slate-900 dark:text-white">CLM-2026-001 // Unforeseen Karst Cavity (Plot K-044)</span>
+                <span class="px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 text-[10px] font-bold">TIMELY (DAY 12 OF 28)</span>
+              </div>
+              <p class="text-[11px] text-slate-500 font-sans mt-0.5">Sinteza JV noticed subsurface void during excavation. Grouting mitigation proposed.</p>
+            </div>
+            <div class="text-right">
+              <span class="text-[10px] text-slate-400 block">EOT Requested: +3 Days</span>
+              <span class="text-amber-500 font-bold">Cost Claim: €14,200</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <button onclick="adjudicateClaim('approve')" class="px-2.5 py-1 rounded-lg bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 text-[10px] font-bold hover:bg-emerald-500/25 transition">Approve EOT</button>
+              <button onclick="adjudicateClaim('reject')" class="px-2.5 py-1 rounded-lg bg-rose-500/15 text-rose-600 dark:text-rose-400 text-[10px] font-bold hover:bg-rose-500/25 transition">Dispute</button>
+            </div>
+          </div>
+
+          <!-- Claim 2: Time-Barred -->
+          <div class="p-3.5 rounded-xl bg-white dark:bg-white/5 border border-rose-500/30 flex flex-col md:flex-row md:items-center justify-between gap-3">
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="font-bold text-slate-900 dark:text-white">CLM-2026-002 // Delayed Tile Spec Delivery (Subcontractor B)</span>
+                <span class="px-2 py-0.5 rounded bg-rose-500/10 text-rose-600 dark:text-rose-400 text-[10px] font-bold">TIME-BARRED (DAY 34)</span>
+              </div>
+              <p class="text-[11px] text-slate-500 font-sans mt-0.5">Submitted after 28 days of awareness. Contractor legally discharged under Sub-Clause 20.2.</p>
+            </div>
+            <div class="text-right">
+              <span class="text-[10px] text-slate-400 block">EOT Requested: +8 Days</span>
+              <span class="text-rose-500 font-bold line-through">Cost Claim: €32,000</span>
+            </div>
+            <span class="px-3 py-1 rounded-lg bg-slate-100 dark:bg-white/10 text-slate-400 text-[10px] font-bold">DISCHARGED & FORFEIT</span>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
